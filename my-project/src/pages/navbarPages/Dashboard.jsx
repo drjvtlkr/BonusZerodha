@@ -3,6 +3,7 @@ import { TfiPieChart } from "react-icons/tfi";
 import { RiDropLine } from "react-icons/ri";
 import { LuLoader2 } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
+import images from "../../assets/images.png";
 
 const Dashboard = () => {
   return (
@@ -82,6 +83,10 @@ const Dashboard = () => {
         <div>
           <h3 className="text-gray-500 text-3xl">Market Overview</h3>
         </div>
+        {/* <img 
+        src={images}
+        className="h-64 w-full"
+        /> */}
       </div>
     </>
   );
