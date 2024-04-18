@@ -13,16 +13,15 @@ import SideBar from "./components/SideBar";
 
 const App = () => {
   const location = useLocation();
-
- 
   const noNavBarPaths = ["/", "/otp"];
-
- 
+  const noSideBarPaths = ["/", "/otp"];
   const renderNavBar = !noNavBarPaths.includes(location.pathname);
+  const renderSidebar = !noSideBarPaths.includes(location.pathname)
 
   return (
     <>
       {renderNavBar && <NavBar />}
+      {renderSidebar && <SideBar/>}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/otp" element={<OTP />} />
@@ -32,7 +31,7 @@ const App = () => {
         <Route path="/positions" element={<Positions />} />
         <Route path="/bids" element={<Bids />} />
         <Route path="/funds" element={<Funds />} />
-        <Route path="/side" element={<SideBar/>}/>
+        {/* <Route path="/side" element={<SideBar />} /> */}
       </Routes>
     </>
   );
