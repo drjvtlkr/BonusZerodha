@@ -8,9 +8,9 @@ const Funds = () => {
   return (
     <div>
       <div className="flex justify-end">
-        <p className="mt-2">Instant, zero-cost fund transfers with </p>
+        <p className="mt-2 font-sans">Instant, zero-cost fund transfers with </p>
         <img src={upi} alt="" className="w-10 h-8 ml-3 mt-2" />
-        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-3">
+        <button class="font-open-sans bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-3">
           Add Funds
         </button>
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-3">
@@ -105,7 +105,7 @@ const Funds = () => {
           </div>
         </div>
           <div className="border border-gray-300 rounded-md mx-auto">
-              <div className="flex justify-between  mb-2 ml-4">
+              <div className="flex justify-between  mb-2 ml-4 font-open-sans">
                 <span className="text-gray-600">Available Margin:</span>
                 <p className="text-black text-bold text-2xl mr-4">0.00</p>
               </div>
