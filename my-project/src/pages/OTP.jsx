@@ -24,7 +24,7 @@ const OTP = () => {
                 {/* Input field */}
                 <div className="h-14 pl-10">
                   <input
-                    className="w-7 h-full flex items-center justify-center text-center outline-none border-gray-100 text-sm bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700 pl-2"
+                    className="w-full h-full flex items-center justify-center text-center outline-none border-gray-100 text-sm bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700 pl-2"
                     type="text"
                     maxLength={6}
                     placeholder="Mobile App Code"
