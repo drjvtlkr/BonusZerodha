@@ -21,7 +21,7 @@ const App = () => {
   return (
     <>
       {renderNavBar && <NavBar />}
-      {renderSidebar && <SideBar/>}
+      {/* {renderSidebar && <SideBar/>} */}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/otp" element={<OTP />} />

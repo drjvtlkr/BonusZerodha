@@ -5,7 +5,7 @@ const OTP = () => {
     <>
       <div>
         <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-12">
-          <div className="relative bg-white px-6 pt-10 pb-9 shadow-xl mx-auto w-full max-w-lg rounded-2xl">
+          <div className="relative w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 mb-4">
             <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
               <div className="flex flex-col items-center justify-center text-center space-y-2">
                 <div className="font-semibold text-3xl">
