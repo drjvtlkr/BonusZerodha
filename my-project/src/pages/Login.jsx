@@ -97,7 +97,7 @@ const Login = () => {
           <div className="flex flex-col items-center justify-center">
             <p className="text-lg text-gray-400 mt-4">ZERODHA</p>
             <p className="text-sm text-gray-400 mt-4">
-              Don't have an account? Sign Up Now
+              Don't have an account? Sign Up Now 
             </p>
             <p className="text-xs text-gray-400 my-4 w-1/3 text-center ">
               Zerodha Broking Limited: Member of NSE, BSE ‐ SEBI Reg. no.
