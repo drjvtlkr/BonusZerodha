@@ -9,6 +9,7 @@ import Holdings from "./pages/navbarPages/Holdings";
 import Positions from "./pages/navbarPages/Positions";
 import Bids from "./pages/navbarPages/Bids";
 import Funds from "./pages/navbarPages/Funds";
+import SideBar from "./components/SideBar";
 
 const App = () => {
   
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/positions" element={<Positions/>}/>
         <Route path="/bids" element={<Bids/>}/>
         <Route path="/funds" element={<Funds/>}/>
+        <Route path="/side" element={<SideBar/>}/>
       </Routes>
     </>
   );
