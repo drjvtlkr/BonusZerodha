@@ -1,16 +1,15 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BellIcon } from "@heroicons/react/24/outline";
 
 export const NavBar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <img
-            src="zerodha.png"
-            className="h-20"
-            alt="Zerodha Logo"
-          />
+        <div>
+          
+        </div>
+        <img src="kite-logo.jpg" className="h-10" alt="Zerodha Logo" />
 
         <div
           className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
@@ -74,7 +73,7 @@ export const NavBar = () => {
               <span className="sr-only">View notifications</span>
               <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
             </button>
-            <li>UserPhotoDropdown</li>
+            <button>User Profile</button>
             <li className="h-5 w-5">PQC870</li>
           </ul>
         </div>

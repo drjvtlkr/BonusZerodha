@@ -49,33 +49,31 @@ const SideBar = () => {
   const characterCount = searchTerm.length;
 
   return (
-    <div className="flex flex-col w-full max-w-3xl mx-auto">
-      <div>
-        <div className="flex items-center  px-3 py-2 border-white-300 focus:outline-none focus:ring-blue-500">
-          <svg
-            className="h-5 w-5 text-gray-400 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <input
-            type="text"
-            placeholder="Search(infy bse, nifty fut, etc.)"
-            className="w-full border-none rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            value={searchTerm}
-            onChange={handleChange}
+    <div className="fixed left-0 top-0 h-full bg-white border-r border-gray-200 overflow-y-auto w-1/4">
+      <div className="flex items-center px-3 py-2 border-b border-gray-200 focus:outline-none focus:ring-blue-500">
+        <svg
+          className="h-5 w-5 text-gray-400 mr-2"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clipRule="evenodd"
           />
-          <span className="text-sm text-gray-500 ml-2">
-            {characterCount}/50
-          </span>
-        </div>
+        </svg>
+        <input
+          type="text"
+          placeholder="Search (infy bse, nifty fut, etc.)"
+          className="w-full border-none rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          value={searchTerm}
+          onChange={handleChange}
+        />
+        <span className="text-sm text-gray-500 ml-2">
+          {characterCount}/50
+        </span>
       </div>
-      <ul className="list-none divide-y divide-gray-200 rounded-b-lg">
+      <ul className="list-none divide-y divide-gray-200">
         {filteredCoins.map((coin) => (
           <li key={coin.id} className="py-3 px-4 hover:bg-gray-100">
             <div className="flex justify-between items-center">

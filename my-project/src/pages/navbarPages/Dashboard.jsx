@@ -3,7 +3,11 @@ import React from "react";
 const Dashboard = () => {
   return (
     <>
-      <div>Dashboard</div>
+    <div className="ml-96">
+    <div>Dashboard</div>
+
+    </div>
+      
     </>
   );
 };
