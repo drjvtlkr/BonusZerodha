@@ -1,16 +1,15 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BellIcon } from "@heroicons/react/24/outline";
 
 export const NavBar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <img
-            src="zerodha.png"
-            className="h-20"
-            alt="Zerodha Logo"
-          />
+        <div>
+          
+        </div>
+        <img src="kite-logo.jpg" className="h-10" alt="Zerodha Logo" />
 
         <div
           className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
@@ -19,7 +18,7 @@ export const NavBar = () => {
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <Link
-                to="/dashboard"
+                to="/home/dashboard"
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-500"
                 aria-current="page"
               >
@@ -28,7 +27,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="orders"
+                to="/home/orders"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Orders
@@ -36,7 +35,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="holdings"
+                to="/home/holdings"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Holdings
@@ -44,7 +43,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="positions"
+                to="/home/positions"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Positions
@@ -52,7 +51,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="bids"
+                to="/home/bids"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Bids
@@ -60,7 +59,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="funds"
+                to="/home/funds"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Funds
@@ -74,7 +73,7 @@ export const NavBar = () => {
               <span className="sr-only">View notifications</span>
               <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
             </button>
-            <li>UserPhotoDropdown</li>
+            <button>User Profile</button>
             <li className="h-5 w-5">PQC870</li>
           </ul>
         </div>
