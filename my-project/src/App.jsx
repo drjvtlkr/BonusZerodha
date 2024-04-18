@@ -1,13 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ConsoleNav from "./console/ConoleNav";
+
 
 const App = () => {
   return (
     <>
-      <div>
-        <h1 className="text-4xl ml-10 py-10">
-        Hello world
-        </h1>
-      </div>
+   <Router>
+   <Routes>
+        <Route path="" element={<ConsoleNav />}/>
+      </Routes>
+   </Router>
+     
+     
     </>
   );
 };
