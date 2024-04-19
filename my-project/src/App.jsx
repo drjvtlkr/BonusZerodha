@@ -13,6 +13,7 @@ import Bids from "./pages/navbarPages/Bids";
 import Funds from "./pages/navbarPages/Funds";
 import SideBar from "./components/SideBar";
 import SideBarr from "./components/SideBarr";
+import Refund from "./pages/Refund";
 
 const App = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/otp" element={<OTP />} />
+        <Route path="/refund" element={<Refund />} />
         {/* <Routes> */}
         <Route path="/home/*" element={<SideBarr />}>
         <Route path="dashboard" element={<Dashboard />} />
