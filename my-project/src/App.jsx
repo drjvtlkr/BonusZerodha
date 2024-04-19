@@ -19,6 +19,8 @@ import Fund from "./pages/consolePages/Funds";
 import Portfolio from "./pages/consolePages/Portfolio";
 import Reports from "./pages/consolePages/Reports";
 import Statement from "./pages/navbarPages/Statements";
+import Refund from "./pages/Refund";
+
 const App = () => {
   const location = useLocation();
   const noNavBarPaths = [
@@ -44,6 +46,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/otp" element={<OTP />} />
+        <Route path="/refund" element={<Refund />} />
         {/* <Routes> */}
         <Route path="/home/*" element={<SideBarr />}>
           <Route path="dashboard" element={<Dashboard />} />
