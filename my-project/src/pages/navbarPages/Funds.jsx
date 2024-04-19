@@ -34,8 +34,8 @@ const Funds = () => {
           </div>
         </div>
           <div className="border border-gray-300 rounded-md mx-auto">
-              <div className="flex justify-between  mb-2 ml-4">
-                <span className="text-gray-600">Available Margin:</span>
+              <div className="flex justify-between  my-2 ml-4">
+                <span className="text-gray-600 ">Available Margin:</span>
                 <p className="text-black text-bold text-2xl mr-4">0.00</p>
               </div>
               <div className="flex justify-between items-center mb-2 ml-4">
@@ -51,39 +51,39 @@ const Funds = () => {
                 <span className="text-gray-600">Opening Balance:</span>
                 <p className="text-black-600 mr-4">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4">
+              <div className="flex justify-between items-center ml-4  mb-2">
                 <span className="text-gray-600">Payin:</span>
                 <p className="text-black-600 mr-4">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4  mb-2">
                 <span className="text-gray-600">Payout:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4  mb-2">
                 <span className="text-gray-600">SPAN:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Deliveery Margin:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Exposure:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Options premium:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Collateral(Liquid funds):</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Collateral(Equity):</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Total Collateral:</span>
                 <p className="text-black-600">0.00</p>
               </div>
@@ -105,7 +105,7 @@ const Funds = () => {
           </div>
         </div>
           <div className="border border-gray-300 rounded-md mx-auto">
-              <div className="flex justify-between  mb-2 ml-4 font-open-sans">
+              <div className="flex justify-between  my-2 ml-4 font-open-sans">
                 <span className="text-gray-600">Available Margin:</span>
                 <p className="text-black text-bold text-2xl mr-4">0.00</p>
               </div>
@@ -122,39 +122,39 @@ const Funds = () => {
                 <span className="text-gray-600">Opening Balance:</span>
                 <p className="text-black-600 mr-4">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4">
+              <div className="flex justify-between items-center ml-4 mb-2">
                 <span className="text-gray-600">Payin:</span>
                 <p className="text-black-600 mr-4">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Payout:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">SPAN:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Deliveery Margin:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Exposure:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Options premium:</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Collateral(Liquid funds):</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Collateral(Equity):</span>
                 <p className="text-black-600">0.00</p>
               </div>
-              <div className="flex justify-between items-center ml-4 mr-4">
+              <div className="flex justify-between items-center ml-4 mr-4 mb-2">
                 <span className="text-gray-600">Total Collateral:</span>
                 <p className="text-black-600">0.00</p>
               </div>
