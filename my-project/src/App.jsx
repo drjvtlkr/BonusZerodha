@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ConsoleNav from "./console/ConoleNav";
 import { useLocation } from "react-router-dom";
-import { NavBar } from "./components/navBar";
+import NavBar from "./components/navBar";
 import Login from "./pages/Login";
 import OTP from "./pages/OTP";
 import Dashboard from "./pages/navbarPages/Dashboard";
@@ -19,7 +19,7 @@ const App = () => {
   const noNavBarPaths = ["/", "/otp"];
   const noSideBarPaths = ["/", "/otp"];
   const renderNavBar = !noNavBarPaths.includes(location.pathname);
-  const renderSidebar = !noSideBarPaths.includes(location.pathname)
+  const renderSidebar = !noSideBarPaths.includes(location.pathname);
 
   return (
     <>
@@ -30,17 +30,17 @@ const App = () => {
         <Route path="/otp" element={<OTP />} />
         {/* <Routes> */}
         <Route path="/home/*" element={<SideBarr />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="orders" element={<Orders />} />
-        <Route path="holdings" element={<Holdings />} />
-        <Route path="positions" element={<Positions />} />
-        <Route path="bids" element={<Bids />} />
-        <Route path="funds" element={<Funds />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="holdings" element={<Holdings />} />
+          <Route path="positions" element={<Positions />} />
+          <Route path="bids" element={<Bids />} />
+          <Route path="funds" element={<Funds />} />
         </Route>
 
         {/* </Routes> */}
-       
-     {/* <Route path="/side" element={<SideBar />} /> */}
+
+        {/* <Route path="/side" element={<SideBar />} /> */}
       </Routes>
     </>
   );
