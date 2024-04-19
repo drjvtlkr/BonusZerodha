@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BellIcon } from "@heroicons/react/24/outline";
+import kitelogo from "../assets/kitelogo.jpg";
 
-export const NavBar = () => {
+export const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div>
-          
-        </div>
-        <img src="kite-logo.jpg" className="h-10" alt="Zerodha Logo" />
+        <div></div>
+        <img src={kitelogo} className="h-10" alt="Zerodha Logo" />
 
         <div
           className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"

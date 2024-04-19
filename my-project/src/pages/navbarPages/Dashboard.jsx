@@ -4,8 +4,9 @@ import { RiDropLine } from "react-icons/ri";
 import { LuLoader2 } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
 import images from "../../assets/images.png";
-
+import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div>
@@ -30,7 +31,12 @@ const Dashboard = () => {
                   <li className="py-4 px-4">Opening Balance 0</li>
                   <li className="flex py-4 px-4">
                     <LuLoader2 className="text-cyan-600 text-2xl" />
-                    <button className="text-blue-600">View statement</button>
+                    <button
+                      className="text-blue-600"
+                      onClick={() => navigate(`/console/funds`)}
+                    >
+                      View statement
+                    </button>
                   </li>
                 </ul>
               </div>
