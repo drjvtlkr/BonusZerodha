@@ -79,58 +79,62 @@ const Refund = () => {
         [new Date(2023, 11, 20), 200000],
 
         // ------------------------------2024
-        [new Date(2024, 3, 13), 37032],
-        [new Date(2024, 3, 14), 38024],
-        [new Date(2024, 3, 15), 38024],
-        [new Date(2024, 3, 16), 38108],
-        [new Date(2024, 3, 17), 38229],
+        [new Date(2023, 3, 13), 37032],
+        [new Date(2023, 3, 14), 38024],
+        [new Date(2023, 3, 15), 38024],
+        [new Date(2023, 3, 16), 38108],
+        [new Date(2023, 3, 17), 38229],
+        [new Date(2023, 7, 10), 10000],
+        [new Date(2023, 7, 1), 110000],
+        [new Date(2023, 7, 3), 130000],
+        [new Date(2023, 7, 12), 140000],
+        [new Date(2023, 7, 20), 170000],
+        [new Date(2023, 7, 16), 150000],
+        [new Date(2023, 7, 18), 170000],
+        [new Date(2023, 7, 19), 190000],
+        [new Date(2023, 7, 25), 20000],
 
-        [new Date(2024, 7, 10), 10000],
-        [new Date(2024, 7, 1), 110000],
-        [new Date(2024, 7, 3), 130000],
-        [new Date(2024, 7, 12), 140000],
-        [new Date(2024, 7, 20), 170000],
-        [new Date(2024, 7, 16), 150000],
-        [new Date(2024, 7, 18), 170000],
-        [new Date(2024, 7, 19), 190000],
-        [new Date(2024, 7, 25), 20000],
+        [new Date(2023, 6, 13), 27032],
+        [new Date(2023, 6, 14), 58024],
+        [new Date(2023, 6, 15), 8024],
+        [new Date(2023, 6, 16), 58108],
+        [new Date(2023, 6, 17), 58229],
+        [new Date(2023, 8, 13), 27032],
+        [new Date(2023, 8, 14), 58024],
+        [new Date(2023, 8, 15), 8024],
+        [new Date(2023, 8, 16), 58108],
+        [new Date(2023, 8, 17), 58229],
 
-        [new Date(2024, 0, 13), 27032],
-        [new Date(2024, 1, 14), 58024],
-        [new Date(2024, 1, 15), 8024],
-        [new Date(2024, 1, 16), 58108],
-        [new Date(2024, 1, 17), 58229],
+        [new Date(2023, 10, 10), 10000],
+        [new Date(2023, 10, 1), 110000],
+        [new Date(2023, 10, 3), 130000],
+        [new Date(2023, 10, 12), 140000],
+        [new Date(2023, 10, 20), 170000],
+        [new Date(2023, 10, 16), 150000],
+        [new Date(2023, 10, 18), 170000],
+        [new Date(2023, 10, 19), 190000],
+        [new Date(2023, 10, 25), 20000],
 
-        [new Date(2024, 10, 10), 10000],
-        [new Date(2024, 10, 1), 110000],
-        [new Date(2024, 10, 3), 130000],
-        [new Date(2024, 10, 12), 140000],
-        [new Date(2024, 10, 20), 170000],
-        [new Date(2024, 10, 16), 150000],
-        [new Date(2024, 10, 18), 170000],
-        [new Date(2024, 10, 19), 190000],
-        [new Date(2024, 10, 25), 20000],
-
-        [new Date(2024, 5, 1), 10000],
-        [new Date(2024, 5, 2), 20000],
-        [new Date(2024, 5, 3), 30000],
-        [new Date(2024, 5, 4), 40000],
-        [new Date(2024, 5, 5), 50000],
-        [new Date(2024, 5, 6), 60000],
-        [new Date(2024, 5, 7), 70000],
-        [new Date(2024, 5, 8), 80000],
-        [new Date(2024, 5, 9), 90000],
-        [new Date(2024, 5, 10), 100000],
-        [new Date(2024, 5, 11), 110000],
-        [new Date(2024, 5, 12), 120000],
-        [new Date(2024, 5, 13), 130000],
-        [new Date(2024, 5, 14), 140000],
-        [new Date(2024, 5, 15), 150000],
-        [new Date(2024, 5, 16), 160000],
-        [new Date(2024, 5, 17), 170000],
-        [new Date(2024, 5, 18), 180000],
-        [new Date(2024, 5, 19), 190000],
-        [new Date(2024, 5, 20), 200000],
+        [new Date(2023, 5, 1), 10000],
+        [new Date(2023, 5, 2), 20000],
+        [new Date(2023, 5, 3), 30000],
+        [new Date(2023, 5, 4), 40000],
+        [new Date(2023, 5, 5), 50000],
+        [new Date(2023, 5, 6), 60000],
+        [new Date(2023, 5, 7), 70000],
+        [new Date(2023, 5, 8), 80000],
+        [new Date(2023, 5, 9), 90000],
+        [new Date(2023, 5, 10), 100000],
+        [new Date(2023, 5, 11), 110000],
+        [new Date(2023, 5, 12), 120000],
+        [new Date(2023, 5, 13), 130000],
+        [new Date(2023, 5, 14), 140000],
+        [new Date(2023, 5, 15), 150000],
+        [new Date(2023, 5, 16), 160000],
+        [new Date(2023, 5, 17), 170000],
+        [new Date(2023, 5, 18), 180000],
+        [new Date(2023, 5, 19), 190000],
+        [new Date(2023, 5, 20), 200000],
 
         [new Date(2023, 9, 4), 38177],
         [new Date(2023, 9, 5), 38705],
@@ -147,18 +151,19 @@ const Refund = () => {
       );
 
       var options = {
-        height: 450,
+        height: 300,
         calendar: {
-          cellSize: 20, // Adjust cell size for better visibility
-          monthLabel: {
-            fontSize: 14, // Adjust font size of month labels
-            color: "#000", // Set color for month labels
-            bold: true, // Make month labels bold
-          },
+            cellSize: 20, // Adjust cell size for better visibility
+            monthLabel: {
+                fontSize: 14, // Adjust font size of month labels
+                bold: true, // Make month labels bold
+            },
         },
-        colorAxis: { colors: ["red", "orange", "yellow", "green"] },
-      };
-
+        colorAxis: {
+            colors: [ '#FF6666', 'red', 'green', '#33FF33'],
+        },
+    };
+    
       chart.draw(dataTable, options);
     }
   }, []);
@@ -248,12 +253,12 @@ const Refund = () => {
       </div>
 
       <div
-        className="mb-6"
+        className=""
         id="calendar_basic"
         style={{ width: "100%", marginLeft: "20px" }}
       ></div>
 
-      <div class="grid grid-cols-5 gap-4 border bg-gray-300 py-8 mb-6 text-lg">
+      <div class="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
         <div class="flex flex-col items-center justify-center">
           <p>Realised P&L</p>
           <p className="font-bold text-red-500 text-4xl">-28.94L</p>
