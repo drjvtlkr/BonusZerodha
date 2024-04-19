@@ -20,7 +20,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/dashboard"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-500"
+                className="block py-2 px-3 text-white bg-blue-700 font-light rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-500"
                 aria-current="page"
               >
                 Dashboard
@@ -29,7 +29,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/orders"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-gray-900 rounded font-light hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Orders
               </Link>
@@ -37,7 +37,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/holdings"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-gray-900 rounded font-light hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Holdings
               </Link>
@@ -45,7 +45,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/positions"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-gray-900 rounded font-light hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Positions
               </Link>
@@ -53,7 +53,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/bids"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-gray-900 rounded font-light hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Bids
               </Link>
@@ -61,7 +61,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/funds"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-gray-900 rounded font-light hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Funds
               </Link>
@@ -72,7 +72,7 @@ export const NavBar = () => {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
+              <BellIcon />
             </button>
             <button>User Profile</button>
             <li className="h-5 w-5">PQC870</li>
