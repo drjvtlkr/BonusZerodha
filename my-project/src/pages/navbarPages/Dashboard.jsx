@@ -9,7 +9,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div>
+      <div className="ml-20">
         <div className="flex items-center shadow-md py-4 ">
           <h2 className="text-4xl font-light text-black">Hello, User</h2>
         </div>
@@ -58,7 +58,12 @@ const Dashboard = () => {
                   <li className="py-4 px-4">Opening Balance 0</li>
                   <li className="flex py-4 px-4">
                     <LuLoader2 className="text-cyan-600 text-2xl" />
-                    <button className="text-blue-600">View statement</button>
+                    <button
+                      className="text-blue-600"
+                      onClick={() => navigate(`/console/funds`)}
+                    >
+                      View statement
+                    </button>{" "}
                   </li>
                 </ul>
               </div>
@@ -89,10 +94,6 @@ const Dashboard = () => {
         <div>
           <h3 className="text-gray-500 text-3xl">Market Overview</h3>
         </div>
-        {/* <img 
-        src={images}
-        className="h-64 w-full"
-        /> */}
       </div>
     </>
   );

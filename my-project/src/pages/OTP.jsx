@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import sv from "../assets/sv(1).png";
 import { FaMobileAlt } from "react-icons/fa";
 const OTP = () => {
@@ -43,9 +44,13 @@ const OTP = () => {
                 {" "}
                 {/* Add this div for centering */}
                 <div className="py-4">
+                <Link 
+                    to="/home/dashboard"
+                    >
                   <button className="w-full outline-none py-3 px-16 bg-orange-500 border-none text-white text-lg shadow-sm">
                     continue
                   </button>
+                  </Link>
                 </div>
               </div>
 

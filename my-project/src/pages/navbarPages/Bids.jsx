@@ -4,7 +4,7 @@ import console from "../../assets/console.jpg"
 const Bids = () => {
   return (
     <>
-      <div>
+      <div className='ml-20'>
         {/* <div className='bg-yellow-100 border-2 border-yellow-300 p-3 sm:p-4 md:p-5 lg:p-6 xl:p-8'>
           <p className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
             The equity, F&O, and currency markets will remain closed today, on account of Ram Navami. Commodity markets will be closed for the first half and trading will be open only in the evening session (5:00 pm onwards).
