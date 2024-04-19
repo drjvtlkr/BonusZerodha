@@ -82,7 +82,6 @@ const Statements = () => {
           </div>
           <div className="w-1/2 ml-4">
             {" "}
-            {/* Adjust width as needed */}
             <h2 className="text-center text-gray-500 text-xl font-light">
               CLosing balance
             </h2>
