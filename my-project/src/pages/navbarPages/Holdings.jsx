@@ -184,27 +184,28 @@ const Holdings = () => {
                             </tr>
                         </thead>
                         <tbody>
+                        
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ALOKINDS 
+                                    HDFCBANK 
                                 </th>
                                 <td class="px-6 py-4">
-                                    210
+                                    22,273
                                 </td>
                                 <td class="px-6 py-4">
-                                    20.27
+                                    1,346.95
                                 </td>
                                 <td class="px-6 py-4">
-                                    27.39
+                                    1,494.7
                                 </td>
                                 <td class="px-6 py-4">
-                                    5,751.90
+                                    3,32,91,453.1
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    1,495.40
+                                    32,90,768.03
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    +35.13%
+                                    +9.88%
                                 </td>
                                 <td class="px-6 py-4">
                                     0.00%
@@ -212,25 +213,25 @@ const Holdings = () => {
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 ASHOKA
+                                 RELIANCE
                                 </th>
                                 <td class="px-6 py-4">
-                                    50
+                                    14,228
                                 </td>
                                 <td class="px-6 py-4">
-                                    132.50
+                                    2,180.5
                                 </td>
                                 <td class="px-6 py-4">
-                                    171.90
+                                    2,929.65
                                 </td>
                                 <td class="px-6 py-4">
-                                    8,595.00
+                                    4,16,83,060.2
                                 </td>
                                 <td class="px-6 py-4">
-                                    1,970.00
+                                    1,16,83,424.2
                                 </td>
-                                <td class="px-6 py-4">
-                                    +29.74%
+                                <td class="px-6 py-4 text-green-500">
+                                    +28.03
                                 </td>
                                 <td class="px-6 py-4">
                                     0.00%
@@ -239,25 +240,25 @@ const Holdings = () => {
                             </tr>
                             <tr class="bg-white dark:bg-gray-800">
                                 <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    CASTROLIND
+                                    INFY
                                 </th>
                                 <td class="px-6 py-4">
-                                    25
+                                    18,016
                                 </td>
                                 <td class="px-6 py-4">
-                                    210.00
+                                    1,387.65
                                 </td>
                                 <td class="px-6 py-4">
-                                    211.30
+                                    1,468.15
                                 </td>
                                 <td class="px-6 py-4">
-                                    5,282.50
+                                    2,64,50,190.4
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    32.50
+                                    14,50,293.66
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    +0.62%
+                                    +5.48
                                 </td>
                                 <td class="px-6 py-4">
                                     0.00%
@@ -265,25 +266,25 @@ const Holdings = () => {
                             </tr>
                             <tr class="bg-white dark:bg-gray-800">
                                 <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    CESC
+                                    WIPRO
                                 </th>
                                 <td class="px-6 py-4">
-                                    100
+                                    67,157
                                 </td>
                                 <td class="px-6 py-4">
-                                    78.60
+                                    387.15
                                 </td>
                                 <td class="px-6 py-4">
-                                    140.90
+                                    459.35
                                 </td>
                                 <td class="px-6 py-4">
-                                14,090.00
+                                3,08,48,567.95
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    6,230.00
+                                    48,48,766.36
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    +79.26%
+                                    +15.72%
                                 </td>
                                 <td class="px-6 py-4 text-red-500">
                                     0.14%
@@ -291,25 +292,285 @@ const Holdings = () => {
                             </tr>
                             <tr class="bg-white dark:bg-gray-800">
                                 <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    COALINDIA
+                                    NIFTYBEES
                                 </th>
                                 <td class="px-6 py-4">
-                                 20
+                                 1,21,445
                                 </td>
                                 <td class="px-6 py-4">
-                                    387.65
+                                    197.62
                                 </td>
                                 <td class="px-6 py-4">
-                                    453.60
+                                    246.87
                                 </td>
                                 <td class="px-6 py-4">
-                                    9,064.00
+                                    2,99,81,127.15
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    1,311.00
+                                    59,81,175.99
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
-                                    +16.91%
+                                    +19.95%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    BANKBEES
+                                </th>
+                                <td class="px-6 py-4">
+                                    60,861
+                                </td>
+                                <td class="px-6 py-4">
+                                    427.2
+                                </td>
+                                <td class="px-6 py-4">
+                                    488.72
+                                </td>
+                                <td class="px-6 py-4">
+                                    2,97,43,987.92.00
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    37,44,194.72
+                                </td>
+                                <td class="px-6 py-4 text-red-500">
+                                    +12.59%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    GOLDBEES
+                                </th>
+                                <td class="px-6 py-4">
+                                    4,91,215
+                                </td>
+                                <td class="px-6 py-4">
+                                    52.93
+                                </td>
+                                <td class="px-6 py-4">
+                                    61.61
+                                </td>
+                                <td class="px-6 py-4">
+                                    3,02,63,756.15
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    42,63,744.57
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +14.09%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    HINDALCO 
+                                </th>
+                                <td class="px-6 py-4">
+                                    20,765
+                                </td>
+                                <td class="px-6 py-4">
+                                    471.95
+                                </td>
+                                <td class="px-6 py-4">
+                                    617.35
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,28,19,272.75
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    30,19,218.15
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +23.55%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    BHARTIARTL 
+                                </th>
+                                <td class="px-6 py-4">
+                                    11,263
+                                </td>
+                                <td class="px-6 py-4">
+                                    861.23
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,224.55
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,37,91,206.65
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    40,92,050.03
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +29.67%
+                                </td>
+                                <td class="px-6 py-4 ">
+                                    +0.00
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    INDUSTOWER
+                                </th>
+                                <td class="px-6 py-4">
+                                    65,747
+                                </td>
+                                <td class="px-6 py-4">
+                                    170.35
+                                </td>
+                                <td class="px-6 py-4">
+                                    3,345.75
+                                </td>
+                                <td class="px-6 py-4">
+                                    2,19,95,658.85
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    1,07,95,656
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +49.80%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ABCAPITAL
+                                </th>
+                                <td class="px-6 py-4">
+                                    3,78,465
+                                </td>
+                                <td class="px-6 py-4">
+                                    160.15
+                                </td>
+                                <td class="px-6 py-4">
+                                    205.55
+                                </td>
+                                <td class="px-6 py-4">
+                                    77,00,930.75
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    17,00,905.4
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +22.05%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    BANDHANBNK
+                                </th>
+                                <td class="px-6 py-4">
+                                    38,604
+                                </td>
+                                <td class="px-6 py-4">
+                                    2,971.9
+                                </td>
+                                <td class="px-6 py-4">
+                                    175.95
+                                </td>
+                                <td class="px-6 py-4">
+                                    67,92,373.8
+                                </td>
+                                <td class="px-6 py-4 text-red-500">
+                                    -47,07,703.9
+                                </td>
+                                <td class="px-6 py-4 text-red-500">
+                                    -69.31%
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    CONCOR
+                                </th>
+                                <td class="px-6 py-4">
+                                    17,811
+                                </td>
+                                <td class="px-6 py-4">
+                                    696.2
+                                </td>
+                                <td class="px-6 py-4">
+                                    928.9
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,65,44,637.9
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    41,44,613.62
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +25.05
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    TATACOMM
+                                </th>
+                                <td class="px-6 py-4">
+                                    7,943
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,221.2
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,908.9
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,51,62,392.7
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    54,62,405.83
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +36.06
+                                </td>
+                                <td class="px-6 py-4">
+                                    0.00%
+                                </td>
+                            </tr>
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ESCOURTS
+                                </th>
+                                <td class="px-6 py-4">
+                                    3,930
+                                </td>
+                                <td class="px-6 py-4">
+                                    2,035.65
+                                </td>
+                                <td class="px-6 py-4">
+                                    3,002.75
+                                </td>
+                                <td class="px-6 py-4">
+                                    1,18,00,807.5
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    38,00,653.35
+                                </td>
+                                <td class="px-6 py-4 text-green-500">
+                                    +32.21%
                                 </td>
                                 <td class="px-6 py-4">
                                     0.00%

@@ -6,6 +6,7 @@ import ConsoleGraph from "../console/ConsoleGraph"
 // import Graph from "./Graph";
 import Chart from 'chart.js/auto';
 import { CategoryScale } from 'chart.js';
+import graph from "../assets/graph.jpg"
 
 Chart.register(CategoryScale);
 
@@ -42,9 +43,10 @@ const ConsoleDash = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center mt-20">
+            <div className=" mt-20">
                 {/* <ConsoleGraph/>             */}
-                <p className="text-gray-600 text-2xl">Website under mentainance please Retry Later</p>
+                <img src={graph} alt="" width={100} height={100} />
+                {/* <p className="text-gray-600 text-2xl">Website under mentainance please Retry Later</p> */}
             </div>
         </>
     )
