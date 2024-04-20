@@ -4,6 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { DateRangePicker, Stack } from "rsuite";
 import data from "./data";
+import alert from "../assets/pagenot.jpeg";
 import "./Refund.css";
 
 const Refund = () => {
@@ -42,10 +43,8 @@ const Refund = () => {
       [new Date(2023, 0, 3), 30000],
       [new Date(2023, 0, 4), 40000],
       [new Date(2023, 0, 5), 50000],
-      [new Date(2023, 0, 6), 60000],
-      [new Date(2023, 0, 7), 70000],
-      [new Date(2023, 0, 8), 80000],
-      [new Date(2023, 0, 9), 90000],
+      // [new Date(2023, 0, 6), 60000],
+      
 
       [new Date(2023, 1, 10), 100000],
       [new Date(2023, 1, 11), 110000],
@@ -80,7 +79,7 @@ const Refund = () => {
       [new Date(2023, 11, 2), 20000],
       [new Date(2023, 11, 3), 30000],
       [new Date(2023, 11, 4), 40000],
-      [new Date(2023, 11, 8), 80000],
+      // [new Date(2023, 11, 8), 80000],
       [new Date(2023, 11, 9), 90000],
       [new Date(2023, 11, 10), 100000],
       [new Date(2023, 11, 11), 110000],
@@ -93,12 +92,13 @@ const Refund = () => {
       [new Date(2023, 11, 19), 190000],
       [new Date(2023, 11, 20), 200000],
 
-      // ------------------------------2024
+      // ------------------------------2023
       [new Date(2023, 3, 13), 37032],
       [new Date(2023, 3, 14), 38024],
       [new Date(2023, 3, 15), 38024],
       [new Date(2023, 3, 16), 38108],
       [new Date(2023, 3, 17), 38229],
+
       [new Date(2023, 7, 10), 10000],
       [new Date(2023, 7, 1), 110000],
       [new Date(2023, 7, 3), 130000],
@@ -110,10 +110,11 @@ const Refund = () => {
       [new Date(2023, 7, 25), 20000],
 
       [new Date(2023, 6, 13), 27032],
-      [new Date(2023, 6, 14), 58024],
+      [new Date(2023, 6, 14), 118024],
       [new Date(2023, 6, 15), 8024],
       [new Date(2023, 6, 16), 58108],
       [new Date(2023, 6, 17), 58229],
+
       [new Date(2023, 8, 13), 27032],
       [new Date(2023, 8, 14), 58024],
       [new Date(2023, 8, 15), 8024],
@@ -135,10 +136,8 @@ const Refund = () => {
       [new Date(2023, 5, 3), 30000],
       [new Date(2023, 5, 4), 40000],
       [new Date(2023, 5, 5), 50000],
-      [new Date(2023, 5, 6), 60000],
-      [new Date(2023, 5, 7), 70000],
-      [new Date(2023, 5, 8), 80000],
-      [new Date(2023, 5, 9), 90000],
+      // [new Date(2023, 5, 8), 80000],
+      [new Date(2023, 5, 9), 10000],
       [new Date(2023, 5, 10), 100000],
       [new Date(2023, 5, 11), 110000],
       [new Date(2023, 5, 12), 120000],
@@ -287,7 +286,7 @@ const Refund = () => {
         )}
       </div>
 
-      {/* Show the calendar only if showCalendar is true */}
+      {/* Show the calendar only if showCalendar is false */}
       {showCalendar && (
         <div
           className=""
@@ -296,7 +295,7 @@ const Refund = () => {
         ></div>
       )}
 
-      {/* Show the whole data when showCalendar is false */}
+      {/* Show the whole data when showCalendar is true */}
       {showCalendar && (
         <div>
           <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
@@ -354,97 +353,107 @@ const Refund = () => {
             </div>
           </div>
 
-          <div className="overflow-x-auto mt-4">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Symbol
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    QTY
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Buy avg
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Buy Value
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Sell Avg
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Sell Value
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Realised P&L
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Unrealised P&L
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {data.map((item, index) => (
-                  <tr key={index}>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {item.symbol}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.qty}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.buyAvg}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.buyValue}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.sellAvg}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.sellValue}
-                    </td>
-                    <td
-                      className={`px-6 py-4 whitespace-nowrap text-sm ${
-                        item.realisedPL < 0 ? "red" : "green"
-                      }`}
-                    >
-                      {item.realisedPL}
-                    </td>
+{/* table */}
+<div className="overflow-x-auto mt-4">
+  <table className="min-w-full divide-y divide-gray-200">
+    <thead className="bg-gray-50">
+      <tr>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Symbol
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          QTY
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Buy avg
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Buy Value
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Sell Avg
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Sell Value
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Realised P&L
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Unrealised P&L
+        </th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {data.map((item, index) => (
+        <tr key={index} className="hover:bg-gray-50">
+          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+            {item.symbol}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.qty}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.buyAvg}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.buyValue}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.sellAvg}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.sellValue}
+          </td>
+          <td
+            className={`px-6 py-4 whitespace-nowrap text-sm ${
+              item.realisedPL < 0 ? "text-red-500" : "text-green-500"
+            }`}
+          >
+            {item.realisedPL}
+          </td>
 
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.unrealisedPL}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.unrealisedPL}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
+        </div>
+      )}
+
+      {!showCalendar && (
+        <div className="flex flex-col items-center justify-center">
+          <img src={alert} alt="No data" className="w-96 h-80 mt-8" />
+          
         </div>
       )}
     </div>
