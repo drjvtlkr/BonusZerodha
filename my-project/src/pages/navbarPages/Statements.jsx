@@ -4,6 +4,7 @@ import ledgerTQC870 from "../../assets/ledgerTQC870.xlsx";
 import { DateRangePicker, Stack } from "rsuite";
 import { CiClock1 } from "react-icons/ci";
 import { FaChevronRight } from "react-icons/fa";
+import "./Statement.css";
 
 const Statements = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,19 +103,41 @@ const Statements = () => {
             </button>
           </div>
           <div className="flex justify-center mb-8">
-            <div className="w-1/2 mr-4">
+            <div className="hover-containers w-1/2 mr-4">
+              <div>
               <h2 className="text-center text-gray-500 text-xl font-light">
-                Opening balance
-              </h2>
-              <p className="text-center font-sm text-xl text-gray-500">
-                {(selectedDateRange) !== null ? `-76.56` : "0.00"}
-              </p>
+                  Opening balance
+                </h2>
+                <p className="text-center font-sm text-xl text-gray-500">
+                  {selectedDateRange !== null ? `-76.56` : "0.00"}
+                </p>
+              </div>
+              <div className="full-values">
+                <h2 className="text-center text-gray-500 text-xl font-light">
+                  Opening balance
+                </h2>
+                <p className="text-center font-sm text-xl text-gray-500">
+                  {selectedDateRange !== null ? `-76.56` : "0.00"}
+                </p>
+              </div>
             </div>
-            <div className="w-1/2 ml-4">
-              <h2 className="text-center text-gray-500 text-xl font-light">
-                Closing balance
-              </h2>
-              <p className="text-center font-sm text-xl text-gray-500">0.00</p>
+            <div className="hover-containers w-1/2 ml-4">
+              <div>
+                <h2 className="text-center text-gray-500 text-xl font-light">
+                  Closing balance
+                </h2>
+                <p className="text-center font-sm text-xl text-gray-500">
+                  0.00
+                </p>
+              </div>
+              <div className="full-values">
+                <h2 className=" text-center text-gray-500 text-xl font-light">
+                  Closing balance
+                </h2>
+                <p className=" text-center font-sm text-xl text-gray-500">
+                  0.00
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -484,11 +507,11 @@ const Statements = () => {
                   <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">
                     Showing{" "}
                     <span className="font-semibold text-gray-900 dark:text-white">
-                      1-10
+                      1-20
                     </span>{" "}
                     of{" "}
                     <span className="font-semibold text-gray-900 dark:text-white">
-                      1000
+                      500
                     </span>
                   </span>
                   <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
@@ -502,6 +525,7 @@ const Statements = () => {
                     </li>
                     <li>
                       <a
+                        aria-current="page"
                         href="#"
                         className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                       >
@@ -519,7 +543,6 @@ const Statements = () => {
                     <li>
                       <a
                         href="#"
-                        aria-current="page"
                         className="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
                       >
                         3

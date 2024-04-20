@@ -3,8 +3,9 @@ import { MdBarChart } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { DateRangePicker, Stack } from "rsuite";
-import { Table } from "flowbite-react";
-// import './styles.css';
+import data from "./data";
+import "./Refund.css";
+
 const Refund = () => {
   const [selectedDateRange, setSelectedDateRange] = useState(null);
 
@@ -79,58 +80,62 @@ const Refund = () => {
         [new Date(2023, 11, 20), 200000],
 
         // ------------------------------2024
-        [new Date(2024, 3, 13), 37032],
-        [new Date(2024, 3, 14), 38024],
-        [new Date(2024, 3, 15), 38024],
-        [new Date(2024, 3, 16), 38108],
-        [new Date(2024, 3, 17), 38229],
+        [new Date(2023, 3, 13), 37032],
+        [new Date(2023, 3, 14), 38024],
+        [new Date(2023, 3, 15), 38024],
+        [new Date(2023, 3, 16), 38108],
+        [new Date(2023, 3, 17), 38229],
+        [new Date(2023, 7, 10), 10000],
+        [new Date(2023, 7, 1), 110000],
+        [new Date(2023, 7, 3), 130000],
+        [new Date(2023, 7, 12), 140000],
+        [new Date(2023, 7, 20), 170000],
+        [new Date(2023, 7, 16), 150000],
+        [new Date(2023, 7, 18), 170000],
+        [new Date(2023, 7, 19), 190000],
+        [new Date(2023, 7, 25), 20000],
 
-        [new Date(2024, 7, 10), 10000],
-        [new Date(2024, 7, 1), 110000],
-        [new Date(2024, 7, 3), 130000],
-        [new Date(2024, 7, 12), 140000],
-        [new Date(2024, 7, 20), 170000],
-        [new Date(2024, 7, 16), 150000],
-        [new Date(2024, 7, 18), 170000],
-        [new Date(2024, 7, 19), 190000],
-        [new Date(2024, 7, 25), 20000],
+        [new Date(2023, 6, 13), 27032],
+        [new Date(2023, 6, 14), 58024],
+        [new Date(2023, 6, 15), 8024],
+        [new Date(2023, 6, 16), 58108],
+        [new Date(2023, 6, 17), 58229],
+        [new Date(2023, 8, 13), 27032],
+        [new Date(2023, 8, 14), 58024],
+        [new Date(2023, 8, 15), 8024],
+        [new Date(2023, 8, 16), 58108],
+        [new Date(2023, 8, 17), 58229],
 
-        [new Date(2024, 0, 13), 27032],
-        [new Date(2024, 1, 14), 58024],
-        [new Date(2024, 1, 15), 8024],
-        [new Date(2024, 1, 16), 58108],
-        [new Date(2024, 1, 17), 58229],
+        [new Date(2023, 10, 10), 10000],
+        [new Date(2023, 10, 1), 110000],
+        [new Date(2023, 10, 3), 130000],
+        [new Date(2023, 10, 12), 140000],
+        [new Date(2023, 10, 20), 170000],
+        [new Date(2023, 10, 16), 150000],
+        [new Date(2023, 10, 18), 170000],
+        [new Date(2023, 10, 19), 190000],
+        [new Date(2023, 10, 25), 20000],
 
-        [new Date(2024, 10, 10), 10000],
-        [new Date(2024, 10, 1), 110000],
-        [new Date(2024, 10, 3), 130000],
-        [new Date(2024, 10, 12), 140000],
-        [new Date(2024, 10, 20), 170000],
-        [new Date(2024, 10, 16), 150000],
-        [new Date(2024, 10, 18), 170000],
-        [new Date(2024, 10, 19), 190000],
-        [new Date(2024, 10, 25), 20000],
-
-        [new Date(2024, 5, 1), 10000],
-        [new Date(2024, 5, 2), 20000],
-        [new Date(2024, 5, 3), 30000],
-        [new Date(2024, 5, 4), 40000],
-        [new Date(2024, 5, 5), 50000],
-        [new Date(2024, 5, 6), 60000],
-        [new Date(2024, 5, 7), 70000],
-        [new Date(2024, 5, 8), 80000],
-        [new Date(2024, 5, 9), 90000],
-        [new Date(2024, 5, 10), 100000],
-        [new Date(2024, 5, 11), 110000],
-        [new Date(2024, 5, 12), 120000],
-        [new Date(2024, 5, 13), 130000],
-        [new Date(2024, 5, 14), 140000],
-        [new Date(2024, 5, 15), 150000],
-        [new Date(2024, 5, 16), 160000],
-        [new Date(2024, 5, 17), 170000],
-        [new Date(2024, 5, 18), 180000],
-        [new Date(2024, 5, 19), 190000],
-        [new Date(2024, 5, 20), 200000],
+        [new Date(2023, 5, 1), 10000],
+        [new Date(2023, 5, 2), 20000],
+        [new Date(2023, 5, 3), 30000],
+        [new Date(2023, 5, 4), 40000],
+        [new Date(2023, 5, 5), 50000],
+        [new Date(2023, 5, 6), 60000],
+        [new Date(2023, 5, 7), 70000],
+        [new Date(2023, 5, 8), 80000],
+        [new Date(2023, 5, 9), 90000],
+        [new Date(2023, 5, 10), 100000],
+        [new Date(2023, 5, 11), 110000],
+        [new Date(2023, 5, 12), 120000],
+        [new Date(2023, 5, 13), 130000],
+        [new Date(2023, 5, 14), 140000],
+        [new Date(2023, 5, 15), 150000],
+        [new Date(2023, 5, 16), 160000],
+        [new Date(2023, 5, 17), 170000],
+        [new Date(2023, 5, 18), 180000],
+        [new Date(2023, 5, 19), 190000],
+        [new Date(2023, 5, 20), 200000],
 
         [new Date(2023, 9, 4), 38177],
         [new Date(2023, 9, 5), 38705],
@@ -147,17 +152,38 @@ const Refund = () => {
       );
 
       var options = {
-        height: 450,
+        height: 300,
         calendar: {
           cellSize: 20, // Adjust cell size for better visibility
           monthLabel: {
             fontSize: 14, // Adjust font size of month labels
-            color: "#000", // Set color for month labels
             bold: true, // Make month labels bold
           },
         },
-        colorAxis: { colors: ["red", "orange", "yellow", "green"] },
+        colorAxis: {
+          colors: ["#FF6666", "red", "green", "#33FF33"],
+        },
+        tooltip: { isHtml: true }, // Enable HTML tooltips
       };
+
+      // Set tooltip content
+      google.visualization.events.addListener(
+        chart,
+        "onmouseover",
+        function (e) {
+          var date = new Date(e.date);
+          var tooltip = (
+            <div style="padding:10px">
+              Gross Realised P&L on ' + date.toDateString() + ': ' + e.value + '
+            </div>
+          );
+          chart.setSelection([{ row: e.row }]);
+          chart.draw(
+            dataTable,
+            Object.assign({}, options, { tooltip: tooltip })
+          );
+        }
+      );
 
       chart.draw(dataTable, options);
     }
@@ -248,174 +274,155 @@ const Refund = () => {
       </div>
 
       <div
-        className="mb-6"
+        className=""
         id="calendar_basic"
         style={{ width: "100%", marginLeft: "20px" }}
       ></div>
 
-      <div class="grid grid-cols-5 gap-4 border bg-gray-300 py-8 mb-6 text-lg">
-        <div class="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
+        <div className="flex flex-col items-center justify-center">
           <p>Realised P&L</p>
-          <p className="font-bold text-red-500 text-4xl">-28.94L</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-red-500 text-4xl">
+              -28.94L
+            </p>
+            <div className="full-value w-36 shadow-xl">
+              Realised P&L -28,94,000
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <p>Charges & taxes</p>
-          <p className="font-bold text-4xl">8.22L</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-4xl">8.22L</p>
+            <div className="full-value w-36 shadow-xl">
+              Charges & taxes 8,22,000
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+
+        <div className="flex flex-col items-center justify-center">
           <p>Other credits & debits</p>
-          <p className="font-bold text-4xl">141.6</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-4xl">141.6</p>
+            <div className="full-value w-40 shadow-xl">
+              credits & debits 141.6000
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+
+        <div className="flex flex-col items-center justify-center">
           <p>Net realised P&L</p>
-          <p className="font-bold text-red-500 text-4xl">-37.16L</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-red-500 text-4xl">
+              -37.16L
+            </p>
+            <div className="full-value w-36 shadow-xl">
+              Net realised P&L -37,16,000
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+
+        <div className="flex flex-col items-center justify-center">
           <p>Unrealised P&L</p>
-          <p className="font-bold text-4xl">0</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-4xl">0</p>
+            <div className="full-value w-36 shadow-xl">Unrealised P&L 0.00</div>
+          </div>
         </div>
       </div>
 
       <div className="overflow-x-auto mt-4">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
-          <tr>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Symbol
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              QTY
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Buy avg
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Buy Value
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              sell Avg
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Sell value
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Realised P&L
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              unrealised P&L
-            </th>
-          </tr>
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
-          <tr>
-            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-              AXISBIBANK23JUN980CE
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              2400
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              13.15
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              31,560.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                12.60
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                30,240.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
-                -1,3200.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                -
-            </td>
-          </tr>
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Symbol
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                QTY
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Buy avg
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Buy Value
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Sell Avg
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Sell Value
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Realised P&L
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Unrealised P&L
+              </th>
+            </tr>
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {data.map((item, index) => (
+              <tr key={index}>
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  {item.symbol}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.qty}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.buyAvg}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.buyValue}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.sellAvg}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.sellValue}
+                </td>
+                <td
+                  className={`px-6 py-4 whitespace-nowrap text-sm ${
+                    item.realisedPL < 0 ? "red" : "green"
+                  }`}
+                >
+                  {item.realisedPL}
+                </td>
 
-          <tr>
-  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-    AXISBIBANK23JUN980CE
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    1500
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    10.75
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    16,125.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    10.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    15,000.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
-    -1,125.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    -
-  </td>
-</tr>
-
-<tr>
-  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-  BANKNIFTY23JUN980CE
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    2000
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    15.25
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    30,500.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    14.50
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    29,000.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
-    -1,500.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    -
-  </td>
-</tr>
-          
-        </tbody>
-      </table>
-    </div>
-
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {item.unrealisedPL}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

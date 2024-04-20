@@ -9,7 +9,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="ml-20">
+      <div className="ml-64">
         <div className="flex items-center shadow-md py-4 ">
           <h2 className="text-4xl font-light text-black">Hello, User</h2>
         </div>

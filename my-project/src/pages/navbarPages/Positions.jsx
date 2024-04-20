@@ -5,7 +5,7 @@ import console from "../../assets/console.jpg";
 const Positions = () => {
   return (
     <>
-      <div>
+      <div className="ml-64">
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="mb-4">
             <img src={Position} alt="" width={100} height={120} />

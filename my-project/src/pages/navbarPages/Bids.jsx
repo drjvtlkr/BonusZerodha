@@ -4,16 +4,10 @@ import console from "../../assets/console.jpg"
 const Bids = () => {
   return (
     <>
-      <div className='ml-20'>
-        {/* <div className='bg-yellow-100 border-2 border-yellow-300 p-3 sm:p-4 md:p-5 lg:p-6 xl:p-8'>
-          <p className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
-            The equity, F&O, and currency markets will remain closed today, on account of Ram Navami. Commodity markets will be closed for the first half and trading will be open only in the evening session (5:00 pm onwards).
-            <span className='text-blue-500'>Read more</span>
-          </p>
-        </div> */}
+      <div className='ml-64'>
 
         <div className='flex flex-row'>
-          <p className='ml-10 hover:border-b-2 hover:border-orange-500 hover:text-orange-500'> Auctions</p>
+          <p className='ml-10 mt-2 hover:border-b-2 hover:border-orange-500 hover:text-orange-500'> Auctions</p>
           <p className='ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500'>IPO</p>
           <p className='ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500'>Govt.securities</p>
         </div>

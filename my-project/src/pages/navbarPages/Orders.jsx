@@ -5,25 +5,25 @@ import console from "../../assets/console.jpg";
 const Orders = () => {
   return (
     <>
-      <div className="ml-20">
+      <div className="ml-64">
         <div className="flex flex-row">
-          <p className="ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
-            {" "}
+          <p className="ml-0 mt-2 hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
             Orders
           </p>
-          <p className="ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
+          <p className="ml-10 hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
             GTT
           </p>
-          <p className="ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
+          <p className="ml-10 hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
             Baskets
           </p>
-          <p className="ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
+          <p className="ml-10 hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
             SIP
           </p>
-          <p className="ml-10  hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
+          <p className="ml-10 hover:border-b-2 hover:border-orange-500 hover:text-orange-500">
             Alerts
           </p>
         </div>
+
         <div className="text-gray-300 border"></div>
         <div className="flex flex-col items-center justify-center mt-10">
           <div className="mb-4">
