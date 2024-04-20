@@ -11,6 +11,7 @@ import { MdOutlineKeyboardCommandKey } from "react-icons/md";
 import { BsQuestionCircle } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import kitelogo from "../assets/kitelogo.jpg";
+import sv from "../assets/sv.png";
 
 const navBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,10 @@ const navBar = () => {
 
   return (
     <>
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div></div>
-        <img src={kitelogo} className="h-10 ml-40" alt="Zerodha Logo" />
+      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div></div>
+          <img src={kitelogo} className="h-10 ml-40" alt="Zerodha Logo" />
 
           <div
             className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
@@ -79,15 +80,23 @@ const navBar = () => {
                   Funds
                 </Link>
               </li>
-              <button
-                type="button"
-                className="relative rounded-full bg-white-800 p-1 text-black-400 hover:text-orange-700 focus:outline-none focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-              >
-                <span className="absolute -inset-1.5" />
-                <span className="sr-only">View notifications</span>
-                <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
-              </button>
-              <button onClick={toggleOpen}>User Profile</button>
+              <li className="flex ">
+                <button
+                  type="button"
+                  className="relative rounded-full bg-white-800 p-1 text-black-400 hover:text-orange-700 focus:outline-none focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                >
+                  <span className="absolute -inset-1.5" />
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
+                </button>
+                <button
+                  onClick={toggleOpen}
+                  className="flex items-center justify-center"
+                >
+                  <img src={sv} className="w-10 h-10" />
+                  User Profile
+                </button>
+              </li>
               <li className="mt-1 h-5 w-5">TQC870</li>
             </ul>
           </div>
