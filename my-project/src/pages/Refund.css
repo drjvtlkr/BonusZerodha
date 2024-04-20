@@ -18,4 +18,12 @@
   .hover-container:hover .full-value {
     opacity: 1;
   }
+
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
   
