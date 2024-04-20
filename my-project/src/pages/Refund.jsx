@@ -10,6 +10,7 @@ const Refund = () => {
   const [selectedDateRange, setSelectedDateRange] = useState(null);
   const [showCalendar, setShowCalendar] = useState(false);
   const [chartLoaded, setChartLoaded] = useState(false);
+  const [reportGenerated, setReportGenerated] = useState(false);
   const handleDateRangeChange = (value) => {
     setSelectedDateRange(value);
   };
@@ -201,17 +202,20 @@ const Refund = () => {
         <MdBarChart className="text-4xl mr-3" /> <p>P&L</p>
       </div>
       <div className="my-4 text-gray-500 border"></div>
-      <div className="flex gap-4">
+      <div className="flex justify-around align-middle">
         {/* Segment dropdown */}
 
         <div className="relative">
           <p className="mb-3 text-gray-500">Segment</p>
           <select
             className="block appearance-none w-48 px-4 py-2 pr-8 rounded-lg border border-gray-300 bg-white text-gray-700 focus:outline-none focus:border-blue-500"
-            defaultValue="Futures & options"
+            defaultValue="Select segment"
           >
+            {/* <option value="features">select segment</option> */}
             <option value="features">Futures & options</option>
-            <option value="options">Options</option>
+            <option value="options">Equity</option>
+            <option value="options">Currency</option>
+            <option value="options">Commodity</option>
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"></div>
         </div>
@@ -283,6 +287,7 @@ const Refund = () => {
         )}
       </div>
 
+      {/* Show the calendar only if showCalendar is true */}
       {showCalendar && (
         <div
           className=""
@@ -291,156 +296,157 @@ const Refund = () => {
         ></div>
       )}
 
-      <div
-        className=""
-        id="calendar_basic"
-        style={{ width: "100%", marginLeft: "20px" }}
-      ></div>
+      {/* Show the whole data when showCalendar is false */}
+      {showCalendar && (
+        <div>
+          <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
+            <div className="flex flex-col items-center justify-center">
+              <p>Realised P&L</p>
+              <div className="hover-container">
+                <p className="short-value font-bold text-red-500 text-4xl">
+                  -28.94L
+                </p>
+                <div className="full-value w-36 shadow-xl">
+                  Realised P&L -28,94,000
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <p>Charges & taxes</p>
+              <div className="hover-container">
+                <p className="short-value font-bold text-4xl">8.22L</p>
+                <div className="full-value w-36 shadow-xl">
+                  Charges & taxes 8,22,000
+                </div>
+              </div>
+            </div>
 
-      <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
-        <div className="flex flex-col items-center justify-center">
-          <p>Realised P&L</p>
-          <div className="hover-container">
-            <p className="short-value font-bold text-red-500 text-4xl">
-              -28.94L
-            </p>
-            <div className="full-value w-36 shadow-xl">
-              Realised P&L -28,94,000
+            <div className="flex flex-col items-center justify-center">
+              <p>Other credits & debits</p>
+              <div className="hover-container">
+                <p className="short-value font-bold text-4xl">141.6</p>
+                <div className="full-value w-40 shadow-xl">
+                  credits & debits 141.6000
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center">
+              <p>Net realised P&L</p>
+              <div className="hover-container">
+                <p className="short-value font-bold text-red-500 text-4xl">
+                  -37.16L
+                </p>
+                <div className="full-value w-36 shadow-xl">
+                  Net realised P&L -37,16,000
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center">
+              <p>Unrealised P&L</p>
+              <div className="hover-container">
+                <p className="short-value font-bold text-4xl">0</p>
+                <div className="full-value w-36 shadow-xl">
+                  Unrealised P&L 0.00
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <p>Charges & taxes</p>
-          <div className="hover-container">
-            <p className="short-value font-bold text-4xl">8.22L</p>
-            <div className="full-value w-36 shadow-xl">
-              Charges & taxes 8,22,000
-            </div>
+
+          <div className="overflow-x-auto mt-4">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Symbol
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    QTY
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Buy avg
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Buy Value
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Sell Avg
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Sell Value
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Realised P&L
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Unrealised P&L
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {data.map((item, index) => (
+                  <tr key={index}>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      {item.symbol}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.qty}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.buyAvg}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.buyValue}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.sellAvg}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.sellValue}
+                    </td>
+                    <td
+                      className={`px-6 py-4 whitespace-nowrap text-sm ${
+                        item.realisedPL < 0 ? "red" : "green"
+                      }`}
+                    >
+                      {item.realisedPL}
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {item.unrealisedPL}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
-
-        <div className="flex flex-col items-center justify-center">
-          <p>Other credits & debits</p>
-          <div className="hover-container">
-            <p className="short-value font-bold text-4xl">141.6</p>
-            <div className="full-value w-40 shadow-xl">
-              credits & debits 141.6000
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center">
-          <p>Net realised P&L</p>
-          <div className="hover-container">
-            <p className="short-value font-bold text-red-500 text-4xl">
-              -37.16L
-            </p>
-            <div className="full-value w-36 shadow-xl">
-              Net realised P&L -37,16,000
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center">
-          <p>Unrealised P&L</p>
-          <div className="hover-container">
-            <p className="short-value font-bold text-4xl">0</p>
-            <div className="full-value w-36 shadow-xl">Unrealised P&L 0.00</div>
-          </div>
-        </div>
-      </div>
-
-      <div className="overflow-x-auto mt-4">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Symbol
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                QTY
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Buy avg
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Buy Value
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Sell Avg
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Sell Value
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Realised P&L
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Unrealised P&L
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            {data.map((item, index) => (
-              <tr key={index}>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                  {item.symbol}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.qty}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.buyAvg}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.buyValue}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.sellAvg}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.sellValue}
-                </td>
-                <td
-                  className={`px-6 py-4 whitespace-nowrap text-sm ${
-                    item.realisedPL < 0 ? "red" : "green"
-                  }`}
-                >
-                  {item.realisedPL}
-                </td>
-
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {item.unrealisedPL}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      )}
     </div>
   );
 };
