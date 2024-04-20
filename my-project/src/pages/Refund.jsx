@@ -4,6 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { DateRangePicker, Stack } from "rsuite";
 import data from "./data";
+import alert from "../assets/alert.jpg";
 import "./Refund.css";
 
 const Refund = () => {
@@ -287,7 +288,7 @@ const Refund = () => {
         )}
       </div>
 
-      {/* Show the calendar only if showCalendar is true */}
+      {/* Show the calendar only if showCalendar is false */}
       {showCalendar && (
         <div
           className=""
@@ -296,7 +297,7 @@ const Refund = () => {
         ></div>
       )}
 
-      {/* Show the whole data when showCalendar is false */}
+      {/* Show the whole data when showCalendar is true */}
       {showCalendar && (
         <div>
           <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
@@ -445,6 +446,14 @@ const Refund = () => {
               </tbody>
             </table>
           </div>
+        </div>
+      )}
+
+      {!showCalendar && (
+        <div className="flex flex-col items-center justify-center">
+          <img src={alert} alt="No data" className="w-64 h-64 mt-8" />
+          <p className="text-gray-500 mt-4 text-4xl">Build a report</p>
+          <p className="text-gray-500 mt-4 text-2xl">Use the above form to generate a report</p>
         </div>
       )}
     </div>
