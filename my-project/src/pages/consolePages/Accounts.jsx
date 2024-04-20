@@ -238,6 +238,40 @@ const NextComponent = () => {
             <p className="text-xl">0415</p>
           </div>
         </div>
+        <div className="">
+          <p className="text-sm mt-5">PAN</p>
+          <p className="text-xl">*526L</p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const PersonalComponent = () => {
+  return (
+    <>
+      <div className="">
+        <p className="text-3xl">Personal</p>
+        <div className="flex flex-row">
+          <div className="">
+            <p className="flex flex-row mt-5 text-sm">
+              E-mail{" "}
+              <span className="ml-5 mt-1 text-blue-500">
+                <FaPenToSquare />
+              </span>
+            </p>
+            <p className="uppercase text-xl ">shrivatsavasantrao@gmail.com</p>
+          </div>
+          <div className=" ml-6">
+            <p className=" flex flex-rowtext-sm mt-5">
+              Mobile{" "}
+              <span className="ml-5 mt-1 text-blue-500">
+                <FaPenToSquare />
+              </span>
+            </p>
+            <p className="text-xl">0415</p>
+          </div>
+        </div>
 
         <div className="">
           <p className="text-sm mt-5">PAN</p>
@@ -248,11 +282,87 @@ const NextComponent = () => {
   );
 };
 
+const BankComponent = () => {
+  return (
+    <>
+      <div>
+        <div className="">
+          <p className="text-3xl">Bank</p>
+        </div>
+        <div className="flex flex-row justify-evenly mt-8">
+          <div className="">
+            <p className="text-lg">
+              Account{" "}
+              <span className="text-xs text-orange-400 bg-amber-100">
+                PRIMARY
+              </span>
+            </p>
+            <p className="font-bold">*2965</p>
+          </div>
+          <div className="ml-16">
+            <p>Bank</p>
+            <p className="font-bold">HDFC BANK LTD</p>
+          </div>
+          <div className="ml-16">
+            <p>Branch</p>
+            <p className="font-bold">TB REVANKAR COMPLEX</p>
+          </div>
+        </div>
+        <div className="text-gray-300 border w-full mt-8"></div>
+        <div className="flex flex-row justify-evenly mt-8">
+          <div className="">
+            <p className="text-lg flex">
+              Account{" "}
+              <span className="ml-5 mt-1 text-blue-500">
+                <FaPenToSquare />
+              </span>
+            </p>
+            <p className="font-bold">*9830</p>
+            <p className="text-blue-600 text-xm mt-5">+ Set as primary</p>
+          </div>
+          <div className="ml-16">
+            <p>Bank</p>
+            <p className="font-bold">ICICI BANK LTD</p>
+          </div>
+          <div className="ml-16">
+            <p>Branch</p>
+            <p className="font-bold">ICICI BANK LTD</p>
+          </div>
+        </div>
+        <div className="text-gray-300 border w-full mt-8"></div>
+
+        <button
+          type="button"
+          class="text-white bg-blue-600 hover:bg-blue-400 focus:ring-4 mt-5 focus:ring-blue-300 font-bold rounded-sm text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          Add bank account
+        </button>
+      </div>
+    </>
+  );
+};
+
 const Accounts = () => {
   const [showVerifiedPNL, setShowVerifiedPNL] = useState(false);
+  const [showBank, setShowBank] = useState(false);
+  const [showPersonal, setShowPersonal] = useState(true);
 
   const toggleVerifiedPNL = () => {
-    setShowVerifiedPNL(!showVerifiedPNL);
+    setShowVerifiedPNL(true);
+    setShowBank(false);
+    setShowPersonal(false);
+  };
+
+  const toggleBank = () => {
+    setShowVerifiedPNL(false);
+    setShowBank(true);
+    setShowPersonal(false);
+  };
+
+  const togglePersonal = () => {
+    setShowVerifiedPNL(false);
+    setShowBank(false);
+    setShowPersonal(true);
   };
 
   return (
@@ -285,19 +395,113 @@ const Accounts = () => {
       </div>
       <div className="flex flex-row justify-evenly mt-16">
         <div className="">
-          <p className="text-lg text-blue-500">personal</p>
-          <p className="mt-6">Nominees</p>
-          <p className="mt-5">Bank</p>
-          <p className="mt-5">Demat</p>
-          <p className="mt-5">Segments</p>
-          <p className="mt-5">Documents</p>
-          <p className="mt-5">Commodity declaration</p>
-          <p className="mt-5">Family</p>
-          <button className="mt-5" onClick={toggleVerifiedPNL}>
+          <button className="mt-5 text-lg" onClick={togglePersonal}>
+            Personal
+          </button>
+          <p className="mt-6 text-lg">Nominees</p>
+          <button className="mt-5 text-lg" onClick={toggleBank}>
+            Bank
+          </button>
+          <p className="mt-5 text-lg">Demat</p>
+          <p className="mt-5 text-lg">Segments</p>
+          <p className="mt-5 text-lg">Documents</p>
+          <p className="mt-5 text-lg">Commodity declaration</p>
+          <p className="mt-5 text-lg">Family</p>
+          <button className="mt-5 text-lg" onClick={toggleVerifiedPNL}>
             Verified P&L
           </button>
         </div>
-        {showVerifiedPNL ? <VerifiedPNL /> : <NextComponent />}
+        <div className="">
+          {/* {selectedSection === "personal" ? (
+            <div className="">
+              <p className="text-3xl">Personal</p>
+              <div className="flex flex-row">
+                <div className="">
+                  <p className="flex flex-row mt-5 text-sm">
+                    E-mail{" "}
+                    <span className="ml-5 mt-1 text-blue-500">
+                      <FaPenToSquare />
+                    </span>
+                  </p>
+                  <p className="uppercase text-xl ">
+                    shrivatsavasantrao@gmail.com
+                  </p>
+                </div>
+                <div className=" ml-6">
+                  <p className=" flex flex-rowtext-sm mt-5">
+                    Mobile{" "}
+                    <span className="ml-5 mt-1 text-blue-500">
+                      <FaPenToSquare />
+                    </span>
+                  </p>
+                  <p className="text-xl">0415</p>
+                </div>
+              </div>
+
+              <div className="">
+                <p className="text-sm mt-5">PAN</p>
+                <p className="text-xl">*526L</p>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <div className="">
+                <p className="text-3xl">Bank</p>
+              </div>
+              <div className="flex flex-row justify-evenly mt-8">
+                <div className="">
+                  <p className="text-lg">
+                    Account{" "}
+                    <span className="text-xs text-orange-400 bg-amber-100">
+                      PRIMARY
+                    </span>
+                  </p>
+                  <p className="font-bold">*2965</p>
+                </div>
+                <div className="ml-16">
+                  <p>Bank</p>
+                  <p className="font-bold">HDFC BANK LTD</p>
+                </div>
+                <div className="ml-16">
+                  <p>Branch</p>
+                  <p className="font-bold">TB REVANKAR COMPLEX</p>
+                </div>
+              </div>
+              <div className="text-gray-300 border w-full mt-8"></div>
+              <div className="flex flex-row justify-evenly mt-8">
+                <div className="">
+                  <p className="text-lg flex">
+                    Account{" "}
+                    <span className="ml-5 mt-1 text-blue-500">
+                      <FaPenToSquare />
+                    </span>
+                  </p>
+                  <p className="font-bold">*9830</p>
+                  <p className="text-blue-600 text-xm mt-5">+ Set as primary</p>
+                </div>
+                <div className="ml-16">
+                  <p>Bank</p>
+                  <p className="font-bold">ICICI BANK LTD</p>
+                </div>
+                <div className="ml-16">
+                  <p>Branch</p>
+                  <p className="font-bold">ICICI BANK LTD</p>
+                </div>
+              </div>
+              <div className="text-gray-300 border w-full mt-8"></div>
+
+              <button
+                type="button"
+                class="text-white bg-blue-600 hover:bg-blue-400 focus:ring-4 mt-5 focus:ring-blue-300 font-bold rounded-sm text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Add bank account
+              </button>
+            </div>
+          )} */}
+        </div>
+        {showPersonal && <PersonalComponent />}
+        {showBank && <BankComponent />}
+        {showVerifiedPNL && <VerifiedPNL />}
       </div>
     </>
   );
