@@ -160,7 +160,7 @@ const VerifiedPNL = () => {
                     <div className="flex items-center border rounded">
                       <img src={SV} className="w-24" />
 
-                      <p className="ml-3">Satvik Vihang</p>
+                      <p className="ml-3">Shrivatsa Vasantrao</p>
                     </div>
                     <div className="mt-4">
                       <div className="mt-4 flex items-center">
