@@ -250,7 +250,7 @@ const NextComponent = () => {
 const PersonalComponent = () => {
   return (
     <>
-      <div className="">
+      <div className="mr-10">
         <p className="text-3xl">Personal</p>
         <div className="flex flex-row">
           <div className="">
@@ -285,7 +285,7 @@ const PersonalComponent = () => {
 const BankComponent = () => {
   return (
     <>
-      <div>
+      <div className="item-center justify-center mr-10">
         <div className="">
           <p className="text-3xl">Bank</p>
         </div>
@@ -380,7 +380,7 @@ const Accounts = () => {
         </div>
         <div className="">
           <p className="text-gray-600">Client ID</p>
-          <p className="text-xl">LKB963</p>
+          <p className="text-xl">TQC870</p>
         </div>
         <div className="">
           <p className="text-gray-600">Support code</p>
@@ -390,10 +390,10 @@ const Accounts = () => {
         </div>
         <div className="">
           <p className="text-gray-600">CKYC no.</p>
-          <p className="text-xl">Shrivatsa Vasantrao</p>
+          <p className="text-xl">50035895339232</p>
         </div>
       </div>
-      <div className="flex flex-row justify-evenly mt-16">
+      <div className="flex flex-row justify-evenly mt-16 ml-56">
         <div className="">
           <button className="mt-5 text-lg" onClick={togglePersonal}>
             Personal

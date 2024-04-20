@@ -4,6 +4,9 @@ import { RiDropLine } from "react-icons/ri";
 import { LuLoader2 } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import console from "../../assets/console.jpg"
+import Position from "../../assets/position.jpg"
+import graphdash from "../../assets/graphdash.jpg"
 const Dashboard = () => {
   const navigate = useNavigate();
   return (
@@ -84,8 +87,54 @@ const Dashboard = () => {
             <p>Investment <span className="ml-8">62.2</span></p>
           </div>
         </div>
-        <div className="w-50 h-8 bg-blue-500">
+        <div className="w-10/12 h-8 mt-6 bg-blue-500">
+        </div>
 
+        <div className="flex flex-row justify-between">
+          <div className="mt-5">
+            <p> ₹55.60</p>
+          </div>
+          <div className="flex flex-row mr-16 mt-5">
+
+            <div class="flex items-center">
+              <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600  border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Current value</label>
+            </div>
+            <div class="flex items-center ml-4">
+              <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Investment value</label>
+            </div>
+            <div class="flex items-center ml-4">
+              <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">P&L  </label>
+            </div>
+
+          </div>
+        </div>
+        <div className="flex flex-row justify-between mt-8">
+          <div className="">
+          <img src={graphdash} alt="" width={460} height={300} />
+
+          </div>
+          <div className=" mr-10">
+          <div className="flex flex-col items-center justify-center mt-5">
+          <div className="mb-4">
+            <img src={Position} alt="" width={100} height={120} />
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 text-sm">
+              You don't have any positions yet
+            </p>
+            <button
+              type="button"
+              class="text-white bg-blue-600 hover:bg-blue-400 focus:ring-4 mt-5 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Get Started
+            </button>
+            
+          </div>
+        </div>
+          </div>
         </div>
         {/* <div className="pt-40">
           <div className="flex items-center justify-center">
