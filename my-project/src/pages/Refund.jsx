@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { DateRangePicker, Stack } from "rsuite";
 import data from "./data";
-import alert from "../assets/alert.jpg";
+import alert from "../assets/pnf.jpg";
 import "./Refund.css";
 
 const Refund = () => {
@@ -43,10 +43,8 @@ const Refund = () => {
       [new Date(2023, 0, 3), 30000],
       [new Date(2023, 0, 4), 40000],
       [new Date(2023, 0, 5), 50000],
-      [new Date(2023, 0, 6), 60000],
-      [new Date(2023, 0, 7), 70000],
-      [new Date(2023, 0, 8), 80000],
-      [new Date(2023, 0, 9), 90000],
+      // [new Date(2023, 0, 6), 60000],
+      
 
       [new Date(2023, 1, 10), 100000],
       [new Date(2023, 1, 11), 110000],
@@ -81,7 +79,7 @@ const Refund = () => {
       [new Date(2023, 11, 2), 20000],
       [new Date(2023, 11, 3), 30000],
       [new Date(2023, 11, 4), 40000],
-      [new Date(2023, 11, 8), 80000],
+      // [new Date(2023, 11, 8), 80000],
       [new Date(2023, 11, 9), 90000],
       [new Date(2023, 11, 10), 100000],
       [new Date(2023, 11, 11), 110000],
@@ -94,12 +92,13 @@ const Refund = () => {
       [new Date(2023, 11, 19), 190000],
       [new Date(2023, 11, 20), 200000],
 
-      // ------------------------------2024
+      // ------------------------------2023
       [new Date(2023, 3, 13), 37032],
       [new Date(2023, 3, 14), 38024],
       [new Date(2023, 3, 15), 38024],
       [new Date(2023, 3, 16), 38108],
       [new Date(2023, 3, 17), 38229],
+
       [new Date(2023, 7, 10), 10000],
       [new Date(2023, 7, 1), 110000],
       [new Date(2023, 7, 3), 130000],
@@ -111,10 +110,11 @@ const Refund = () => {
       [new Date(2023, 7, 25), 20000],
 
       [new Date(2023, 6, 13), 27032],
-      [new Date(2023, 6, 14), 58024],
+      [new Date(2023, 6, 14), 118024],
       [new Date(2023, 6, 15), 8024],
       [new Date(2023, 6, 16), 58108],
       [new Date(2023, 6, 17), 58229],
+
       [new Date(2023, 8, 13), 27032],
       [new Date(2023, 8, 14), 58024],
       [new Date(2023, 8, 15), 8024],
@@ -136,10 +136,8 @@ const Refund = () => {
       [new Date(2023, 5, 3), 30000],
       [new Date(2023, 5, 4), 40000],
       [new Date(2023, 5, 5), 50000],
-      [new Date(2023, 5, 6), 60000],
-      [new Date(2023, 5, 7), 70000],
-      [new Date(2023, 5, 8), 80000],
-      [new Date(2023, 5, 9), 90000],
+      // [new Date(2023, 5, 8), 80000],
+      [new Date(2023, 5, 9), 10000],
       [new Date(2023, 5, 10), 100000],
       [new Date(2023, 5, 11), 110000],
       [new Date(2023, 5, 12), 120000],
@@ -451,7 +449,7 @@ const Refund = () => {
 
       {!showCalendar && (
         <div className="flex flex-col items-center justify-center">
-          <img src={alert} alt="No data" className="w-64 h-64 mt-8" />
+          <img src={alert} alt="No data" className="w-72 h-64 mt-8" />
           <p className="text-gray-500 mt-4 text-4xl">Build a report</p>
           <p className="text-gray-500 mt-4 text-2xl">Use the above form to generate a report</p>
         </div>
