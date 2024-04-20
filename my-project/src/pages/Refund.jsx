@@ -4,6 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { DateRangePicker, Stack } from "rsuite";
 import { Table } from "flowbite-react";
+import "./Refund.css";
 // import './styles.css';
 const Refund = () => {
   const [selectedDateRange, setSelectedDateRange] = useState(null);
@@ -153,17 +154,37 @@ const Refund = () => {
       var options = {
         height: 300,
         calendar: {
-            cellSize: 20, // Adjust cell size for better visibility
-            monthLabel: {
-                fontSize: 14, // Adjust font size of month labels
-                bold: true, // Make month labels bold
-            },
+          cellSize: 20, // Adjust cell size for better visibility
+          monthLabel: {
+            fontSize: 14, // Adjust font size of month labels
+            bold: true, // Make month labels bold
+          },
         },
         colorAxis: {
-            colors: [ '#FF6666', 'red', 'green', '#33FF33'],
+          colors: ["#FF6666", "red", "green", "#33FF33"],
         },
-    };
-    
+        tooltip: { isHtml: true }, // Enable HTML tooltips
+      };
+
+      // Set tooltip content
+      google.visualization.events.addListener(
+        chart,
+        "onmouseover",
+        function (e) {
+          var date = new Date(e.date);
+          var tooltip = (
+            <div style="padding:10px">
+              Gross Realised P&L on ' + date.toDateString() + ': ' + e.value + '
+            </div>
+          );
+          chart.setSelection([{ row: e.row }]);
+          chart.draw(
+            dataTable,
+            Object.assign({}, options, { tooltip: tooltip })
+          );
+        }
+      );
+
       chart.draw(dataTable, options);
     }
   }, []);
@@ -258,169 +279,188 @@ const Refund = () => {
         style={{ width: "100%", marginLeft: "20px" }}
       ></div>
 
-      <div class="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
-        <div class="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-5 gap-4 border bg-gray-300 py-3 mb-6 text-lg">
+        <div className="flex flex-col items-center justify-center">
           <p>Realised P&L</p>
-          <p className="font-bold text-red-500 text-4xl">-28.94L</p>
+          <div className="hover-container">
+            <p className="short-value font-bold text-red-500 text-4xl">
+              -28.94L
+            </p>
+            <div className="full-value w-36 shadow-xl">Realised P&L -28,94,000</div>
+          </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
-          <p>Charges & taxes</p>
-          <p className="font-bold text-4xl">8.22L</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <p>Other credits & debits</p>
-          <p className="font-bold text-4xl">141.6</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <p>Net realised P&L</p>
-          <p className="font-bold text-red-500 text-4xl">-37.16L</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <p>Unrealised P&L</p>
-          <p className="font-bold text-4xl">0</p>
-        </div>
+        <div className="flex flex-col items-center justify-center">
+  <p>Charges & taxes</p>
+  <div className="hover-container">
+    <p className="short-value font-bold text-4xl">8.22L</p>
+    <div className="full-value w-36 shadow-xl">Charges & taxes 8,22,000</div>
+  </div>
+</div>
+
+<div className="flex flex-col items-center justify-center">
+  <p>Other credits & debits</p>
+  <div className="hover-container">
+    <p className="short-value font-bold text-4xl">141.6</p>
+    <div className="full-value w-40 shadow-xl">credits & debits 141.6000</div>
+  </div>
+</div>
+
+<div className="flex flex-col items-center justify-center">
+  <p>Net realised P&L</p>
+  <div className="hover-container">
+    <p className="short-value font-bold text-red-500 text-4xl">-37.16L</p>
+    <div className="full-value w-36 shadow-xl">Net realised P&L -37,16,000</div>
+  </div>
+</div>
+
+<div className="flex flex-col items-center justify-center">
+  <p>Unrealised P&L</p>
+  <div className="hover-container">
+    <p className="short-value font-bold text-4xl">0</p>
+    <div className="full-value w-36 shadow-xl">Unrealised P&L 0.00</div>
+  </div>
+</div>
+
       </div>
 
       <div className="overflow-x-auto mt-4">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
-          <tr>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Symbol
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              QTY
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Buy avg
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Buy Value
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              sell Avg
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Sell value
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              Realised P&L
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-            >
-              unrealised P&L
-            </th>
-          </tr>
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
-          <tr>
-            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-              AXISBIBANK23JUN980CE
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              2400
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              13.15
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              31,560.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Symbol
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                QTY
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Buy avg
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Buy Value
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                sell Avg
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Sell value
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Realised P&L
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                unrealised P&L
+              </th>
+            </tr>
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                AXISBIBANK23JUN980CE
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                2400
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                13.15
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                31,560.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 12.60
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 30,240.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
                 -1,3200.00
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 -
-            </td>
-          </tr>
+              </td>
+            </tr>
 
-          <tr>
-  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-    AXISBIBANK23JUN980CE
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    1500
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    10.75
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    16,125.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    10.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    15,000.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
-    -1,125.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    -
-  </td>
-</tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                AXISBIBANK23JUN980CE
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                1500
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                10.75
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                16,125.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                10.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                15,000.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
+                -1,125.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                -
+              </td>
+            </tr>
 
-<tr>
-  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-  BANKNIFTY23JUN980CE
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    2000
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    15.25
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    30,500.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    14.50
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    29,000.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
-    -1,500.00
-  </td>
-  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-    -
-  </td>
-</tr>
-          
-        </tbody>
-      </table>
-    </div>
-
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                BANKNIFTY23JUN980CE
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                2000
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                15.25
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                30,500.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                14.50
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                29,000.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-red-500">
+                -1,500.00
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                -
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
