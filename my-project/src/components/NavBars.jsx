@@ -77,7 +77,7 @@ export const NavBar = () => {
                         to="/console/funds/option1"
                         className="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 w-full text-left focus:outline-none"
                       >
-                        Option 1
+                        Withdrawl 
                       </Link>
                     </li>
                     <li>
@@ -93,7 +93,7 @@ export const NavBar = () => {
                         to="/console/funds/option3"
                         className="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 w-full text-left focus:outline-none"
                       >
-                        Option 3
+                         Intrest Statement
                       </Link>
                     </li>
                     <li>
@@ -101,7 +101,7 @@ export const NavBar = () => {
                         to="/console/funds/option4"
                         className="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-100 w-full text-left focus:outline-none"
                       >
-                        Option 4
+                        Bank Mandate
                       </Link>
                     </li>
                   </ul>
@@ -129,7 +129,6 @@ export const NavBar = () => {
                   className="flex items-center justify-center"
                 >
                   <img src={sv} className="w-10 h-10" />
-                  User Profile
                 </button>
               </li>
               <li className="h-5 w-5">TQC870</li>
@@ -143,8 +142,8 @@ export const NavBar = () => {
           style={{ zIndex: "100" }}
         >
           <div className="p-5">
-            <p className="text-lg">Mohammed Saifuddin Badami</p>
-            <p className="text-gray-400">saifbadami@gmail.com</p>
+            <p className="text-lg">Shrivatsa Vasantrao Kulkarni</p>
+            <p className="text-gray-400">shrivatsakulkarni@gmail.com</p>
           </div>
           <ul
             className="py-2 text-sm text-gray-700 "

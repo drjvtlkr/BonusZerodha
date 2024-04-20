@@ -3,7 +3,6 @@ import { TfiPieChart } from "react-icons/tfi";
 import { RiDropLine } from "react-icons/ri";
 import { LuLoader2 } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
-import images from "../../assets/images.png";
 import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -11,7 +10,7 @@ const Dashboard = () => {
     <>
       <div className="ml-64">
         <div className="flex items-center shadow-md py-4 ">
-          <h2 className="text-4xl font-light text-black">Hello, User</h2>
+          <h2 className="text-4xl font-light text-black">Hello, Shrivatsa </h2>
         </div>
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/2 px-4 py-2 bg-white rounded shadow-md">

@@ -94,7 +94,6 @@ const navBar = () => {
                   className="flex items-center justify-center"
                 >
                   <img src={sv} className="w-10 h-10" />
-                  User Profile
                 </button>
               </li>
               <li className="mt-1 h-5 w-5">TQC870</li>
@@ -108,8 +107,8 @@ const navBar = () => {
           style={{ zIndex: "100" }}
         >
           <div className="p-5">
-            <p className="text-lg">Mohammed Saifuddin Badami</p>
-            <p className="text-gray-400">saifbadami@gmail.com</p>
+            <p className="text-lg">Shrivatsa Vasantrao Kulkarni</p>
+            <p className="text-gray-400">shrivatsakulkarni@gmail.com</p>
           </div>
           <ul
             className="py-2 text-sm text-gray-700 "
