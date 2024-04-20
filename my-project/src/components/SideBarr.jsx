@@ -37,12 +37,12 @@ const SideBarr = () => {
       >
         <div class="h-full px-4 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul class="space-y-2 font-medium">
-            <li>
-              <p class="text-xs">
+            <li className="flex flex-row">
+              <p class="text-xs mr-2 flex">
                 NIFTY 50 <span class="text-orange-600">21995.85</span>{" "}
                 <span class="text-gray-400">-152.05(-0.69%)</span>
               </p>
-              <p class="text-xs">
+              <p class="text-xs mt-0.5">
                 SENSEX<span class="text-orange-600">72488.99</span>
                 <span class="text-gray-400">-454.69(-0.62%)</span>
               </p>

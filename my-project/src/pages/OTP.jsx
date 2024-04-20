@@ -10,7 +10,7 @@ const OTP = () => {
           <div className="flex flex-col items-center justify-center text-center space-y-1">
             <div className="font-semibold">
               <img src={sv} alt="" className=" h-28" />
-              <p className="text-2xl font-semibold mt-3">CE4528</p>
+              <p className="text-2xl font-semibold mt-3">TQC870</p>
             </div>
           </div>
 

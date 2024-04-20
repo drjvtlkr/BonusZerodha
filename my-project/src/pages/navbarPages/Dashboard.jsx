@@ -70,7 +70,24 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="pt-40">
+
+        <div className="mt-10">
+          <p className="text-red-700">Holdings(1)</p>
+        </div>
+        <div className="flex flex-row justify-between">
+          <div className=" mt-8">
+            <p className="text-3xl text-green-700">6.35 Cr<span className="text-sm text-green-600">+16.94%</span></p>
+            <p className="text-" >P&L</p>
+          </div>
+          <div className="mr-32">
+            <p>Current value <span className="ml-8">55.6</span></p>
+            <p>Investment <span className="ml-8">62.2</span></p>
+          </div>
+        </div>
+        <div className="w-50 h-8 bg-blue-500">
+
+        </div>
+        {/* <div className="pt-40">
           <div className="flex items-center justify-center">
             <BsBriefcase className="text-gray-400 text-9xl" />
           </div>
@@ -88,11 +105,11 @@ const Dashboard = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <h3 className="text-gray-500 text-3xl">Market Overview</h3>
-        </div>
+        </div> */}
       </div>
     </>
   );

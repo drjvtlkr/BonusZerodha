@@ -25,7 +25,7 @@ const navBar = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div></div>
-          <img src={kitelogo} className="h-10 ml-40" alt="Zerodha Logo" />
+          <img src={kitelogo} className="h-4 ml-40 mb-8" alt="Zerodha Logo" />
 
           <div
             className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
@@ -87,16 +87,16 @@ const navBar = () => {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
+                  <BellIcon className="h-5 w-5 ml-12 mb-4" aria-hidden="true" />
                 </button>
                 <button
                   onClick={toggleOpen}
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center ml-10"
                 >
-                  <img src={sv} className="w-10 h-10" />
+                  <img src={sv} className="w-10 h-10 mb-4" />
+                  <p className="mb-3" onClick={toggleOpen}>TQC870</p>
                 </button>
               </li>
-              <li className="mt-1 h-5 w-5">TQC870</li>
             </ul>
           </div>
         </div>

@@ -126,16 +126,16 @@ const Holdings = () => {
                         <tbody>
                             <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <th scope="row" class="px-6 py-1 text-lg font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    2,02,382
+                                    26,53,00,000
                                 </th>
                                 <td class="px-6 py-1 text-lg">
-                                    2,98,494<span className='text-xs ml-1'>32</span>
+                                    32,88,70,175<span className='text-xs ml-1'>.3</span>
                                 </td>
                                 <td class="px-6 py-1 text-lg text-green-500">
-                                    18<span className='text-xs ml-1'>94</span><span className='text-xs ml-1'>(+0.0146)</span>
+                                    0
                                 </td>
                                 <td class="px-6 py-1 text-lg text-green-500">
-                                    96,111<span className='text-xs ml-1'>-81</span><span className='text-xs ml-1'>(+47.4906)</span>
+                                    6,35,70,175.32<span className='text-xs ml-1'></span><span className='text-xs ml-1'>(16.94%)</span>
                                 </td>
 
                             </tr>
@@ -220,7 +220,7 @@ const Holdings = () => {
                                 <td class="px-6 py-4">
                                     4,16,83,060.2
                                 </td>
-                                <td class="px-6 py-4">
+                                <td class="px-6 py-4 text-green-500">
                                     1,16,83,424.2
                                 </td>
                                 <td class="px-6 py-4 text-green-500">
@@ -279,8 +279,8 @@ const Holdings = () => {
                                 <td class="px-6 py-4 text-green-500">
                                     +15.72%
                                 </td>
-                                <td class="px-6 py-4 text-red-500">
-                                    0.14%
+                                <td class="px-6 py-4">
+                                    0.00%
                                 </td>
                             </tr>
                             <tr class="bg-white dark:bg-gray-800">
@@ -328,7 +328,7 @@ const Holdings = () => {
                                 <td class="px-6 py-4 text-green-500">
                                     37,44,194.72
                                 </td>
-                                <td class="px-6 py-4 text-red-500">
+                                <td class="px-6 py-4 text-green-500">
                                     +12.59%
                                 </td>
                                 <td class="px-6 py-4">
@@ -573,9 +573,7 @@ const Holdings = () => {
                     </table>
                 </div>
 
-                <div className="flex items-center justify-center text-slate-600 mt-8 text-xl">
-                    <p>Can't Fetch More Data</p>
-                </div>
+              
 
             </div>
         </>
