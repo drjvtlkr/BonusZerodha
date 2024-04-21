@@ -120,19 +120,19 @@ const Refund = () => {
               <p>Realised P&L</p>
               <div className="hover-container">
                 <p className="short-value font-bold text-red-500 text-4xl">
-                  -28.94L
+                  129
                 </p>
                 <div className="full-value w-36 shadow-xl">
-                  Realised P&L -28,94,000
+                  Realised P&L 12918271.34
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
               <p>Charges & taxes</p>
               <div className="hover-container">
-                <p className="short-value font-bold text-4xl">8.22L</p>
+                <p className="short-value font-bold text-4xl">448</p>
                 <div className="full-value w-36 shadow-xl">
-                  Charges & taxes 8,22,000
+                  Charges & taxes 4483278.752
                 </div>
               </div>
             </div>
@@ -171,96 +171,108 @@ const Refund = () => {
           </div>
 
           {/* table */}
-          <div className="overflow-x-auto mt-28">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className=" py-4">
-                <tr>
-                  <th
-                    scope="col"
-                    className="px-6 py-6 text-left text-xs font-medium text-gray-500 bg-gray-100 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Symbol
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    QTY
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Buy avg
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Buy Value
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Sell Avg
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Sell Value
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
-                  >
-                    Realised P&L
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Unrealised P&L
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {data.map((item, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">
-                      {item.symbol}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
-                      {item.qty}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
-                      {item.buyAvg}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
-                      {item.buyValue}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
-                      {item.sellAvg}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
-                      {item.sellValue}
-                    </td>
-                    <td
-                      className={`px-6 py-4 whitespace-nowrap text-sm ${
-                        item.realisedPL < 0 ? "text-red-500" : "text-green-500"
-                      } border-r border-gray-200`}
-                    >
-                      {item.realisedPL}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {item.unrealisedPL}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <div className="overflow-x-auto mt-28   p-4">
+  <div className="flex justify-between mb-4">
+    <div className="text-lg font-medium">Showing page 1(rows 1 -14 ) Latest updated : 2024-04-19</div>
+    <div className="flex">
+      <input
+        type="text"
+        placeholder="Search..."
+        className="px-3 py-1 mr-2 border border-gray-300 rounded-md"
+      />
+      <button className="px-4 py-2 bg-blue-500 text-white rounded-md">Download</button>
+    </div>
+  </div>
+  <table className="min-w-full divide-y divide-gray-200 border border-gray-200">
+    <thead className="py-4">
+      <tr>
+        <th
+          scope="col"
+          className="px-6 py-6 text-left text-xs font-medium text-gray-500 bg-gray-100 uppercase tracking-wider border-r border-gray-200"
+        >
+          Symbol
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          QTY
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          Buy avg
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          Buy Value
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          Sell Avg
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          Sell Value
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200"
+        >
+          Realised P&L
+        </th>
+        <th
+          scope="col"
+          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Unrealised P&L
+        </th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {data.map((item, index) => (
+        <tr key={index} className="hover:bg-gray-50">
+          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">
+            {item.symbol}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
+            {item.qty}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
+            {item.buyAvg}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
+            {item.buyValue}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
+            {item.sellAvg}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-r border-gray-200">
+            {item.sellValue}
+          </td>
+          <td
+            className={`px-6 py-4 whitespace-nowrap text-sm ${
+              item.realisedPL < 0 ? "text-red-500" : "text-green-500"
+            } border-r border-gray-200`}
+          >
+            {item.realisedPL}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            {item.unrealisedPL}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         </div>
       )}
 
