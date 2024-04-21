@@ -123,7 +123,7 @@ const Refund = () => {
               <p>Realised P&L</p>
               <div className="hover-container">
                 <p className="short-value font-bold text-red-500 text-4xl">
-                  129
+                  129L
                 </p>
                 <div className="full-value w-36 shadow-xl">
                   Realised P&L 12918271.34
@@ -133,7 +133,7 @@ const Refund = () => {
             <div className="flex flex-col items-center justify-center">
               <p>Charges & taxes</p>
               <div className="hover-container">
-                <p className="short-value font-bold text-4xl">448</p>
+                <p className="short-value font-bold text-4xl">448L</p>
                 <div className="full-value w-36 shadow-xl">
                   Charges & taxes 4483278.752
                 </div>
@@ -154,10 +154,10 @@ const Refund = () => {
               <p>Net realised P&L</p>
               <div className="hover-container">
                 <p className="short-value font-bold text-red-500 text-4xl">
-                  -37.16L
+                  -
                 </p>
                 <div className="full-value w-36 shadow-xl">
-                  Net realised P&L -37,16,000
+                  Net realised P&L -
                 </div>
               </div>
             </div>
