@@ -29,11 +29,13 @@ export const NavBar = () => {
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div></div>
+          <div className="ml-16">
           <img src={console} className="h-10" alt="Zerodha Logo" />
 
+          </div>
+
           <div
-            className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
+            className="items-center justify-end hidden w-full mt-3 md:flex md:w-auto md:order-1"
             id="navbar-user"
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -122,16 +124,16 @@ export const NavBar = () => {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-5 w-5 ml-12" aria-hidden="true" />
+                  <BellIcon className="h-5 w-5 ml-12 mb-9" aria-hidden="true" />
                 </button>
                 <button
                   onClick={toggleOpen}
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center ml-10 -mt-6"
                 >
-                  <img src={sv} className="w-10 h-10" />
+                  <img src={sv} className="w-10 h-10 mb-4" />
+                  <p className="mb-3" onClick={toggleOpen}>TQC870</p>
                 </button>
               </li>
-              <li className="h-5 w-5">TQC870</li>
             </ul>
           </div>
         </div>
@@ -152,7 +154,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100"
               >
                 <LuUser />
                 My Profile
@@ -161,7 +163,7 @@ export const NavBar = () => {
             <li>
               <Link
                 to="/home/dashboard"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <IoPieChartOutline /> Kite
               </Link>
@@ -169,7 +171,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
               >
                 <CiBitcoin />
                 Coin
@@ -178,7 +180,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
               >
                 <SlSupport />
                 Support
@@ -187,7 +189,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100 "
               >
                 <FiUserPlus />
                 Invite friends
@@ -196,7 +198,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <ImCompass2 />
                 Tour Kite
@@ -205,7 +207,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <MdOutlineKeyboardCommandKey />
                 Keyboard shortcuts
@@ -214,7 +216,7 @@ export const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <BsQuestionCircle />
                 User manual
@@ -224,7 +226,7 @@ export const NavBar = () => {
           <div className="py-1">
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2 "
+              className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2 "
             >
               <IoIosLogOut /> Sign out
             </a>

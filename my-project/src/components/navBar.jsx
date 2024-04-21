@@ -25,7 +25,7 @@ const navBar = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div></div>
-          <img src={kitelogo} className="h-4 ml-40 mb-8" alt="Zerodha Logo" />
+          <img src={kitelogo} className="h-4 ml-10 mb-8" alt="Zerodha Logo" />
 
           <div
             className="items-center justify-end hidden w-full md:flex md:w-auto md:order-1"
@@ -117,7 +117,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100"
               >
                 <LuUser />
                 My Profile
@@ -126,7 +126,7 @@ const navBar = () => {
             <li>
               <Link
                 to="/console/dashboard"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <IoPieChartOutline /> Console
               </Link>
@@ -134,7 +134,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
               >
                 <CiBitcoin />
                 Coin
@@ -143,7 +143,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2"
               >
                 <SlSupport />
                 Support
@@ -152,7 +152,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 border-b border-gray-100 "
               >
                 <FiUserPlus />
                 Invite friends
@@ -161,7 +161,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <ImCompass2 />
                 Tour Kite
@@ -170,7 +170,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <MdOutlineKeyboardCommandKey />
                 Keyboard shortcuts
@@ -179,7 +179,7 @@ const navBar = () => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
+                className="px-4 py-2 hover:bg-gray-100 flex justify-start items-center gap-2 "
               >
                 <BsQuestionCircle />
                 User manual
@@ -189,7 +189,7 @@ const navBar = () => {
           <div className="py-1">
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2 "
+              className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2 "
             >
               <IoIosLogOut /> Sign out
             </a>
