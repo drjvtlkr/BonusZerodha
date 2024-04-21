@@ -4,6 +4,8 @@ import ledgerTQC870 from "../../assets/ledgerTQC870.xlsx";
 import { DateRangePicker, Stack } from "rsuite";
 import { CiClock1 } from "react-icons/ci";
 import { FaChevronRight } from "react-icons/fa";
+import { IoCloudDownloadOutline } from "react-icons/io5";
+import { FaRegCopyright } from "react-icons/fa6";
 import "./Statement.css";
 
 const Statements = () => {
@@ -143,17 +145,17 @@ const Statements = () => {
           <div className="flex flex-col justify-center">
             <div className="flex justify-end">
               <button
-                className="text-blue-500 font-medium font-bold py-2 px-2 rounded mr-2"
+                className="text-blue-500 flex font-medium font-bold py-2 px-2 rounded mr-2"
                 onClick={handleXLSXDownload}
               >
-                Download XLSX
+                 <IoCloudDownloadOutline className="mx-2"/> XLSX 
               </button>
-              <span className="text-blue-500">|</span>
+              <button className="text-blue-500 font-medium">|</button>
               <button
-                className="text-blue-500 font-medium py-2 px-2 rounded"
+                className="text-blue-500 font-medium py-2 rounded"
                 onClick={handleCSVDownload}
               >
-                Download CSV
+               CSV
               </button>
             </div>
             <div>
@@ -161,23 +163,23 @@ const Statements = () => {
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500">
                   <thead className="text-xs text-gray-700 bg-gray-100">
                     <tr>
-                      <th scope="col" className="px-12 py-3">
+                      <th scope="col" className="px-12 py-3 text-gray-500">
                         Date
                       </th>
-                      <th scope="col" className="px-6 py-3">
-                        Segment{" "}
+                      <th scope="col" className="px-6 py-3 text-gray-500">
+                        Segment
                       </th>
-                      <th scope="col" className="px-6 py-3">
+                      <th scope="col" className="px-6 py-3 flex justify-between text-gray-500">
                         Particulars
-                        <p className="text-blue-600">Ledger Explained ?</p>
+                        <p className="text-blue-500 flex"><FaRegCopyright />Ledger Explained ?</p>
                       </th>
-                      <th scope="col" className="px-6 py-3">
+                      <th scope="col" className="px-6 py-3 text-gray-500">
                         Debit
                       </th>
-                      <th scope="col" className="px-6 py-3">
+                      <th scope="col" className="px-6 py-3 text-gray-500">
                         Credit
                       </th>
-                      <th scope="col" className="px-6 py-3">
+                      <th scope="col" className="px-6 py-3 text-gray-500">
                         Net
                       </th>
                     </tr>

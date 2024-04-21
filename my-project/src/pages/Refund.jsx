@@ -12,6 +12,7 @@ const Refund = () => {
   const [selectedDateRange, setSelectedDateRange] = useState(null);
   const [showCalendar, setShowCalendar] = useState(false);
 
+
   const handleDateRangeChange = (value) => {
     setSelectedDateRange(value);
   };
@@ -90,7 +91,7 @@ const Refund = () => {
           <FaChevronRight />
         </button>
       </div>
-
+    
       <div className="py-5">
         {selectedDateRange && (
           <div className="mt-4 flex justify-end px-5">
@@ -106,10 +107,12 @@ const Refund = () => {
       </div>
 
       {/* Show the calendar image only if showCalendar is true */}
+     
       {showCalendar && (
         <div className="flex justify-center items-center">
           <img src={calendarImage} alt="Calendar" className="w-5/6 mb-20" />
         </div>
+        
       )}
 
       {/* Show the whole data when showCalendar is true */}
@@ -284,5 +287,6 @@ const Refund = () => {
     </div>
   );
 };
+  
 
 export default Refund;
