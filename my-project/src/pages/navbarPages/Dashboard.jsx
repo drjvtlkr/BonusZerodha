@@ -75,7 +75,7 @@ const Dashboard = () => {
 
 
         <div className="mt-10">
-          <p className="text-red-700">Holdings(1)</p>
+          <p className="text-red-700">Holdings(32)</p>
         </div>
         <div className="flex flex-row justify-between">
           <div className=" mt-8">

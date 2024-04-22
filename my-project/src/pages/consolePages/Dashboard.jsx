@@ -37,11 +37,11 @@ const ConsoleDash = () => {
 
     return (
         <>
-            <div className="ml-44 mt-5">
+            <div className="ml-52 mt-5">
                 <p className="text-3xl">Hi Shrivatsa Vasantrao</p>
             </div>
             <div className="flex flex-row justify-between">
-                <div className="flex flex-row ml-32 mt-20">
+                <div className="flex flex-row ml-52 mt-20">
                     <p>Equity account value</p>
                     <SlArrowDown className="ml-3 mt-2 w-3 h-3" />
                 </div>

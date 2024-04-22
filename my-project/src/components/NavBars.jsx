@@ -29,7 +29,7 @@ export const NavBar = () => {
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div className="ml-16">
+          <div className="">
           <img src={console} className="h-10" alt="Zerodha Logo" />
 
           </div>

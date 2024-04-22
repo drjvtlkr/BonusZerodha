@@ -18,8 +18,8 @@ const Refund = () => {
   };
 
   return (
-    <div className="px-5">
-      <div className="flex text-2xl text-gray-500">
+    <div className="px-8">
+      <div className="flex text-2xl text-gray-500 ml-4 md:ml-48 ">
         {/* <img src={yourImageHere} alt="Your Image" className="text-4xl mr-3" />{" "} */}
         <MdBarChart className="text-4xl mr-3" /> <p>P&L</p>
       </div>
